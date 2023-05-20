@@ -9,7 +9,6 @@ import vbuImg from "../../Images/vbuImg.png";
 import vbuLogo from "../../Images/vbulogo.jpg";
 
 import LinkedIn from "../../Images/LinkedIn.png";
-
 import GreatLearning from "../../Images/greatLearning.png";
 import FreeCodeCamp from "../../Images/FreeCodeCamp.png";
 
