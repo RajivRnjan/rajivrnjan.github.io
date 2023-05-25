@@ -62,7 +62,7 @@ function MyWork() {
           <img src={Img3} alt="Img3" />
           <img src={Img3} alt="Img3" />
         </Carousel>
-        ;
+        
       </div>
       </section>
     </>
