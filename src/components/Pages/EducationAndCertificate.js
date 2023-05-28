@@ -74,11 +74,7 @@ function EducationAndCertification() {
                   </div>
                   <span>CBSE</span>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Facere dignissimos cupiditate inventore sequi architecto
-                    voluptates labore, amet delectus neque maiores. Facere
-                    dignissimos cupiditate inventore sequi architecto voluptates
-                    labore, amet delectus neque maiores.
+                  National Public School is a co-education, english medium, senior secondary school, affiliated with CBSE and located at New Area, Hazaribagh, Jharkhand. The school was established in 1977 and managed by Laxman Kaushaliya Chandravansi Memorial Educational Society.
                   </p>
                 </div>
               </div>
@@ -102,11 +98,7 @@ function EducationAndCertification() {
                   </div>
                   <span>JAC - SCIENCE</span>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Facere dignissimos cupiditate inventore sequi architecto
-                    voluptates labore, amet delectus neque maiores. Facere
-                    dignissimos cupiditate inventore sequi architecto voluptates
-                    labore, amet delectus neque maiores.
+                  INTER SCIENCE COLLEGE HAZARIBAG is located in Rural area of Jharkhand state/ut of India. In Ward No.01 area of Hazaribagh block of Hazaribag district. The year of establishment of Inter Science College is 2005. Inter Science College is a Co-Educational school.  It is a Sr. Secondary School (Class 11-12), where lowest class is 11th and highest class is 12th.
                   </p>
                 </div>
               </div>
@@ -130,11 +122,7 @@ function EducationAndCertification() {
                   </div>
                   <span>VBU - BCA</span>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Facere dignissimos cupiditate inventore sequi architecto
-                    voluptates labore, amet delectus neque maiores. Facere
-                    dignissimos cupiditate inventore sequi architecto voluptates
-                    labore, amet delectus neque maiores.
+                    University Department of Computer Application of Vinoba Bhave University is  First AICTE approved department in the Jharkhand. The Year of Establishment is 2007. Vinoba Bhave University is funded by the agencies of Government of India and Jharkhand State. 
                   </p>
                 </div>
               </div>
