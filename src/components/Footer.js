@@ -8,6 +8,7 @@ function Footer() {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
 
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer>
@@ -62,7 +63,7 @@ function Footer() {
             </div>
             <div className="BottomMiddleFooter">
               <AiFillCopyrightCircle size="18px" />{" "}
-              <p>&nbsp; Copyright 2023 by Rajiv. All Right Reserved</p>
+              <p>&nbsp; Copyright {currentYear} by Rajiv. All Right Reserved</p>
             </div>
             <div className="BottomRightFooter">
               <ul>

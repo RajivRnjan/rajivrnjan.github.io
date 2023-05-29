@@ -1,4 +1,4 @@
-import { React, useEffect, useState, useRef } from "react";
+import { React, useEffect} from "react";
 import { useInView } from "react-intersection-observer";
 
 import AOS from "aos";
@@ -32,9 +32,12 @@ function Resume() {
                   <h4>Matriculation</h4>
                   <span className="date">2019</span>
                   <span>CBSE</span>
-                  <p className="EduacationDesc">
-                  Matriculation education, also referred to as secondary education or high school education, is an important phase in a student's academic journey. 
-                  </p>
+                  <div className="EduacationDesc">
+                    <ul>
+                      <li>National Public School, Hazaribagh</li>
+                      <li>86.6%</li>
+                    </ul>
+                  </div>
                 </div>
 
                 <span class="sideLine" data-aos="fade-up"></span>
@@ -42,11 +45,13 @@ function Resume() {
                   <h4>Intermediate</h4>
                   <span className="date">2021</span>
                   <span>JAC</span>
-                  <p className="EduacationDesc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste quod sed aliquid, maxime quos delectus aperiam
-                    cupiditate. Assumenda, in omnis.
-                  </p>
+                  <div className="EduacationDesc">
+                  <ul>
+                      <li>Inter Sciecne College, Hazaribagh</li>
+                      <li>PCM</li>
+                      <li>84%</li>
+                    </ul>
+                  </div>
                 </div>
 
                 <span class="sideLine" data-aos="fade-up"></span>
@@ -54,11 +59,13 @@ function Resume() {
                   <h4>Graduation</h4>
                   <span className="date">2024</span>
                   <span>AICTE</span>
-                  <p className="EduacationDesc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste quod sed aliquid, maxime quos delectus aperiam
-                    cupiditate. Assumenda, in omnis.
-                  </p>
+                  <div className="EduacationDesc">
+                  <ul>
+                      <li>Universtiy Department of Computer Application <br/> Vinoba Bhave University</li>
+                      <li>BCA</li>
+                      <li>8.3 SGGPA</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
