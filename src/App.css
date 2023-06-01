@@ -982,9 +982,10 @@ a {
 }
 .progressvalueHtml {
   background: var(--primary-color);
-  animation: loadHtml 3s normal forwards;
-
   height: 4px;
+}
+.animateLoadHtml{
+  animation: loadHtml 3s normal forwards;
 }
 @keyframes loadHtml {
   0% {
@@ -997,9 +998,10 @@ a {
 
 .progressvalueJavascript {
   background: var(--primary-color);
-  animation: loadJavascript 3s normal forwards;
-
   height: 4px;
+}
+.animateLoadJavascript{
+  animation: loadJavascript 3s normal forwards;
 }
 @keyframes loadJavascript {
   0% {
@@ -1011,9 +1013,10 @@ a {
 }
 .progressvalueReactjs {
   background: var(--primary-color);
-  animation: loadReactjs 3s normal forwards;
-
   height: 4px;
+}
+.animateLoadReactjs{
+  animation: loadReactjs 3s normal forwards;
 }
 @keyframes loadReactjs {
   0% {
@@ -1025,9 +1028,10 @@ a {
 }
 .progressvaluePhp {
   background: var(--primary-color);
+ height: 4px;
+}
+.animateLoadPhp{
   animation: loadPhp 3s normal forwards;
-
-  height: 4px;
 }
 @keyframes loadPhp {
   0% {

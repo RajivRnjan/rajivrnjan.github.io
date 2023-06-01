@@ -46,7 +46,7 @@ function Help() {
                 </div>
                 <div className="ItemDesc">
                     <h3>Certification</h3>
-                    <p>10+ Project</p>
+                    <p>10+ </p>
                 </div>
             </div>
             </Link>

@@ -4,7 +4,7 @@ import HeroSection from "../HeroSection";
 import Help from "../Help";
 import MyJourney from "../MyJourney";
 import MyWork from "../MyWork";
-import PeopleAboutMe from "../PeopleAboutMe";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +21,7 @@ function Home() {
       <Help />
       <MyJourney />
       <MyWork />
-      {/* <PeopleAboutMe/> */}
+     
 
       <div className="thankingContainer">
         <p>

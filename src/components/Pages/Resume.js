@@ -1,16 +1,58 @@
-import { React, useEffect} from "react";
-import { useInView } from "react-intersection-observer";
+import { React,useEffect} from "react";
+// import { React, useRef, useEffect,useState} from "react";
+// import { useInView } from "react-intersection-observer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Resume() {
-  // const { ref:myRef, inView:myElementIsVisible} = useInView();
-  const { ref, inView } = useInView();
+
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+
+  
+  
+ 
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const progressvalueHtml = entry.target.querySelector('.progressvalueHtml');
+      const progressvalueJavascript = entry.target.querySelector('.progressvalueJavascript');
+      const progressvalueReactjs = entry.target.querySelector('.progressvalueReactjs');
+      const progressvaluePhp = entry.target.querySelector('.progressvaluePhp');
+     
+  
+      if (entry.isIntersecting) {
+        progressvalueHtml.classList.add('animateLoadHtml');
+
+        progressvalueJavascript.classList.add('animateLoadJavascript');
+
+        progressvalueReactjs.classList.add('animateLoadReactjs');
+
+        progressvaluePhp.classList.add('animateLoadPhp');
+       
+      return;       
+      }
+      progressvalueHtml.classList.remove('animateLoadHtml');
+
+      progressvalueJavascript.classList.remove('animateLoadJavascript');
+
+      progressvalueReactjs.classList.remove('animateLoadReactjs');
+
+      progressvaluePhp.classList.remove('animateLoadPhp');
+    });
+  });
+  
+  // observer.observe(document.querySelector('#progressvaluecontainer1'))
+  // observer.observe(document.querySelector('#progressvaluecontainer2'))
+  // observer.observe(document.querySelector('#progressvaluecontainer3'))
+  // observer.observe(document.querySelector('#progressvaluecontainer4'))
+
+  
+  
   return (
     <>
       <section className="ResumeContainer">
@@ -117,14 +159,14 @@ function Resume() {
 
         <section>
           <div className="bottomResumeContainer">
-            <div className="bottomLeftResumeContainer" data-aos="fade-up">
+            <div className="bottomLeftResumeContainer" data-aos="fade-up" >
               <h2>Coding Skills</h2>
 
-              <div className="progress">
+              <div className= "progress" >
                 <span>HTML/CSS</span>
                 <span>90%</span>
               </div>
-              <div className="progressvaluecontainer">
+              <div className="progressvaluecontainer" id =" progressvaluecontainer1">
                 <div className="progressvalueHtml"></div>
               </div>
 
@@ -132,7 +174,7 @@ function Resume() {
                 <span>JavaScript</span>
                 <span>80%</span>
               </div>
-              <div className="progressvaluecontainer">
+              <div className="progressvaluecontainer" id =" progressvaluecontainer2">
                 <div className="progressvalueJavascript"></div>
               </div>
 
@@ -140,7 +182,7 @@ function Resume() {
                 <span>ReactJs</span>
                 <span>60%</span>
               </div>
-              <div className="progressvaluecontainer">
+              <div className="progressvaluecontainer" id =" progressvaluecontainer3">
                 <div className="progressvalueReactjs"></div>
               </div>
 
@@ -148,7 +190,7 @@ function Resume() {
                 <span>Php</span>
                 <span>75%</span>
               </div>
-              <div className="progressvaluecontainer">
+              <div className="progressvaluecontainer" id =" progressvaluecontainer4">
                 <div className="progressvaluePhp"></div>
               </div>
             </div>
@@ -178,7 +220,7 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      ref={ref}
+                      // ref={ref}
                       className="circle1"
                       cx="80"
                       cy="80"
