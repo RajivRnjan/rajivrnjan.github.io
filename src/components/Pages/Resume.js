@@ -1,58 +1,25 @@
-import { React,useEffect} from "react";
-// import { React, useRef, useEffect,useState} from "react";
-// import { useInView } from "react-intersection-observer";
+import { React,  useEffect} from "react";
+
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useInView } from "react-intersection-observer";
 
 function Resume() {
-
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-
   
-  
- 
+  const { ref: htmlRef, inView: htmlIsVisible } = useInView();
+  const { ref: javascriptRef, inView: javascriptIsVisible } = useInView();
+  const { ref: reactjsRef, inView: reactjsIsVisible } = useInView();
+  const { ref: phpRef, inView: phpIsVisible } = useInView();
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      const progressvalueHtml = entry.target.querySelector('.progressvalueHtml');
-      const progressvalueJavascript = entry.target.querySelector('.progressvalueJavascript');
-      const progressvalueReactjs = entry.target.querySelector('.progressvalueReactjs');
-      const progressvaluePhp = entry.target.querySelector('.progressvaluePhp');
-     
-  
-      if (entry.isIntersecting) {
-        progressvalueHtml.classList.add('animateLoadHtml');
+  const { ref: communicationRef, inView: communicationIsVisible } = useInView();
+  const { ref: logicRef, inView: logicIsVisible } = useInView();
+  const { ref: problemRef, inView: problemIsVisible } = useInView();
 
-        progressvalueJavascript.classList.add('animateLoadJavascript');
-
-        progressvalueReactjs.classList.add('animateLoadReactjs');
-
-        progressvaluePhp.classList.add('animateLoadPhp');
-       
-      return;       
-      }
-      progressvalueHtml.classList.remove('animateLoadHtml');
-
-      progressvalueJavascript.classList.remove('animateLoadJavascript');
-
-      progressvalueReactjs.classList.remove('animateLoadReactjs');
-
-      progressvaluePhp.classList.remove('animateLoadPhp');
-    });
-  });
-  
-  // observer.observe(document.querySelector('#progressvaluecontainer1'))
-  // observer.observe(document.querySelector('#progressvaluecontainer2'))
-  // observer.observe(document.querySelector('#progressvaluecontainer3'))
-  // observer.observe(document.querySelector('#progressvaluecontainer4'))
-
-  
-  
   return (
     <>
       <section className="ResumeContainer">
@@ -88,7 +55,7 @@ function Resume() {
                   <span className="date">2021</span>
                   <span>JAC</span>
                   <div className="EduacationDesc">
-                  <ul>
+                    <ul>
                       <li>Inter Sciecne College, Hazaribagh</li>
                       <li>PCM</li>
                       <li>84%</li>
@@ -102,8 +69,11 @@ function Resume() {
                   <span className="date">2024</span>
                   <span>AICTE</span>
                   <div className="EduacationDesc">
-                  <ul>
-                      <li>Universtiy Department of Computer Application <br/> Vinoba Bhave University</li>
+                    <ul>
+                      <li>
+                        Universtiy Department of Computer Application <br />{" "}
+                        Vinoba Bhave University
+                      </li>
                       <li>BCA</li>
                       <li>8.3 SGGPA</li>
                     </ul>
@@ -159,46 +129,57 @@ function Resume() {
 
         <section>
           <div className="bottomResumeContainer">
-            <div className="bottomLeftResumeContainer" data-aos="fade-up" >
+            <div className="bottomLeftResumeContainer" data-aos="fade-up">
               <h2>Coding Skills</h2>
 
-              <div className= "progress" >
+              <div className="progress">
                 <span>HTML/CSS</span>
                 <span>90%</span>
               </div>
-              <div className="progressvaluecontainer" id =" progressvaluecontainer1">
-                <div className="progressvalueHtml"></div>
+              <div className="progressvaluecontainer" ref={htmlRef} id=" progressvaluecontainer1">              
+                <div className={ `progressvalueHtml ${htmlIsVisible ? "animateLoadHtml" : ''} `}>
+                  
+                </div>
               </div>
 
               <div className="progress">
                 <span>JavaScript</span>
                 <span>80%</span>
               </div>
-              <div className="progressvaluecontainer" id =" progressvaluecontainer2">
-                <div className="progressvalueJavascript"></div>
+              <div
+                className="progressvaluecontainer"
+                ref={javascriptRef}
+              >
+                <div className={ `progressvalueJavascript ${javascriptIsVisible ? "animateLoadJavascript" : ''} `}></div>
               </div>
 
               <div className="progress">
                 <span>ReactJs</span>
                 <span>60%</span>
               </div>
-              <div className="progressvaluecontainer" id =" progressvaluecontainer3">
-                <div className="progressvalueReactjs"></div>
+              <div
+                className="progressvaluecontainer"
+                ref={reactjsRef}
+              >
+                <div className={ `progressvalueReactjs ${reactjsIsVisible ? "animateLoadReactjs" : ''} `}></div>
               </div>
 
               <div className="progress">
                 <span>Php</span>
                 <span>75%</span>
               </div>
-              <div className="progressvaluecontainer" id =" progressvaluecontainer4">
-                <div className="progressvaluePhp"></div>
+              <div
+                className="progressvaluecontainer"
+                ref={phpRef}
+              >
+                <div className={ `progressvaluePhp ${phpIsVisible ? "animateLoadPhp" : ''} `}></div>
               </div>
             </div>
 
             <div className="bottomRightResumeContainer" data-aos="fade-up">
               <h2>Other Skills</h2>
               <div className="circularProgressBarContainer">
-                <div className="circularprogress" data-aos="zoom-in">
+                <div className="circularprogress" data-aos="zoom-in" ref={communicationRef}>
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">80%</div>
@@ -220,8 +201,8 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      // ref={ref}
-                      className="circle1"
+                      
+                      className={ `circle1 ${communicationIsVisible ? "animateCommunication" : ''} `}
                       cx="80"
                       cy="80"
                       r="70"
@@ -230,7 +211,7 @@ function Resume() {
                   </svg>
                 </div>
 
-                <div className="circularprogress" data-aos="zoom-out">
+                <div className="circularprogress" data-aos="zoom-out" ref={logicRef}>
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">70%</div>
@@ -252,7 +233,7 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      className="circle2"
+                      className={ `circle2 ${logicIsVisible ? "animateLogic" : ''} `}
                       cx="80"
                       cy="80"
                       r="70"
@@ -261,7 +242,7 @@ function Resume() {
                   </svg>
                 </div>
 
-                <div className="circularprogress" data-aos="zoom-in">
+                <div className="circularprogress" data-aos="zoom-in" ref={problemRef}>
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">75%</div>
@@ -283,7 +264,7 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      className="circle3"
+                      className={ `circle3 ${problemIsVisible ? "animateProblem" : ''} `}
                       cx="80"
                       cy="80"
                       r="70"

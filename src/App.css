@@ -946,6 +946,10 @@ a {
   }
 }
 @media screen and (max-width: 490px) {
+  .ResumeContainer{
+    margin:0px;
+    padding:0 15px;
+  }
   .topResumeContainer,
   .bottomResumeContainer {
     display: flex;
@@ -980,11 +984,14 @@ a {
   background-color: #cccaca;
   margin-bottom: 15px;
 }
-.progressvalueHtml {
+.progressvalueHtml,
+.progressvalueJavascript,
+.progressvalueReactjs,
+.progressvaluePhp {
   background: var(--primary-color);
   height: 4px;
 }
-.animateLoadHtml{
+.animateLoadHtml {
   animation: loadHtml 3s normal forwards;
 }
 @keyframes loadHtml {
@@ -996,11 +1003,8 @@ a {
   }
 }
 
-.progressvalueJavascript {
-  background: var(--primary-color);
-  height: 4px;
-}
-.animateLoadJavascript{
+
+.animateLoadJavascript {
   animation: loadJavascript 3s normal forwards;
 }
 @keyframes loadJavascript {
@@ -1011,11 +1015,8 @@ a {
     width: 80%;
   }
 }
-.progressvalueReactjs {
-  background: var(--primary-color);
-  height: 4px;
-}
-.animateLoadReactjs{
+
+.animateLoadReactjs {
   animation: loadReactjs 3s normal forwards;
 }
 @keyframes loadReactjs {
@@ -1026,11 +1027,8 @@ a {
     width: 60%;
   }
 }
-.progressvaluePhp {
-  background: var(--primary-color);
- height: 4px;
-}
-.animateLoadPhp{
+
+.animateLoadPhp {
   animation: loadPhp 3s normal forwards;
 }
 @keyframes loadPhp {
@@ -1110,8 +1108,11 @@ a {
   stroke-width: 20px;
   stroke-dasharray: 470;
   stroke-dashoffset: 470;
+}
+.animateCommunication {
   animation: anim1 2s linear forwards;
 }
+
 @keyframes anim1 {
   100% {
     stroke-dashoffset: 94;
@@ -1123,6 +1124,8 @@ a {
   stroke-width: 20px;
   stroke-dasharray: 470;
   stroke-dashoffset: 470;
+}
+.animateLogic {
   animation: anim2 2s linear forwards;
 }
 @keyframes anim2 {
@@ -1136,6 +1139,8 @@ a {
   stroke-width: 20px;
   stroke-dasharray: 470;
   stroke-dashoffset: 470;
+}
+.animateProblem {
   animation: anim3 2s linear forwards;
 }
 @keyframes anim3 {
