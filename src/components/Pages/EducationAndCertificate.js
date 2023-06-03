@@ -46,7 +46,7 @@ function EducationAndCertification() {
               <img
                 src={EducationImg}
                 alt="EducationHeaderImg"
-                data-aos="fade-right"
+                data-aos="fade-up"
               />
             </div>
           </div>
@@ -57,7 +57,7 @@ function EducationAndCertification() {
             <h3>Let's start</h3>
 
             <section>
-              <div className="FirstContainer" data-aos="fade-right">
+              <div className="FirstContainer" data-aos="fade-up">
                 <div className="schoolImg">
                   <img src={npsImg} alt="SchoolImg" />
                 </div>
@@ -81,7 +81,7 @@ function EducationAndCertification() {
             </section>
 
             <section>
-              <div className="SecondContainer" data-aos="fade-left">
+              <div className="SecondContainer" data-aos="fade-up">
                 <div className="schoolImg">
                   <img src={iscImg} alt="clgImg" />
                 </div>
@@ -105,7 +105,7 @@ function EducationAndCertification() {
             </section>
 
             <section>
-              <div className="ThirdContainer" data-aos="fade-right">
+              <div className="ThirdContainer" data-aos="fade-up">
                 <div className="schoolImg">
                   <img src={vbuImg} alt="vbumcaImg" />
                 </div>
