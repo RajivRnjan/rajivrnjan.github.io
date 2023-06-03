@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://rajivrnjan.github.io/portfolio",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
