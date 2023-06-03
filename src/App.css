@@ -946,9 +946,9 @@ a {
   }
 }
 @media screen and (max-width: 490px) {
-  .ResumeContainer{
-    margin:0px;
-    padding:0 15px;
+  .ResumeContainer {
+    margin: 0px;
+    padding: 0 15px;
   }
   .topResumeContainer,
   .bottomResumeContainer {
@@ -1002,7 +1002,6 @@ a {
     width: 90%;
   }
 }
-
 
 .animateLoadJavascript {
   animation: loadJavascript 3s normal forwards;
@@ -1151,10 +1150,7 @@ a {
 
 /* #### Contact Us #### */
 /* #### Contact Us #### */
-.GetInTochMainContainer {
-  margin: 40px 60px;
-  padding: 10px 20px;
-}
+
 input,
 textarea {
   outline: none;
@@ -1170,6 +1166,10 @@ input:focus {
   outline: none;
 }
 @media screen and (max-width: 1920px) {
+  .GetInTochMainContainer {
+    margin: 40px 60px;
+    padding: 10px 20px;
+  }
   .left_container {
     display: flex;
     flex-direction: column;
@@ -1206,8 +1206,15 @@ input:focus {
   color: var(--secondary-text-color);
   margin: 0 0 40px 0;
 }
+.GetInTouch > .left_container > form {
+  padding:0;
+}
 
 @media screen and (max-width: 490px) {
+  .GetInTochMainContainer {
+    margin: 5px;
+    padding: 0;
+  }
   .GetInTouch {
     display: flex;
     flex-direction: column;
@@ -1256,7 +1263,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* padding: 0; */
+
 }
 .inputContainer {
   display: flex;
@@ -1457,7 +1464,7 @@ textarea {
   }
   .ProjectItemButton {
     display: flex;
-    /* gap:10px; */
+    gap:10px;
     justify-content: space-between;
   }
   .ProjectItemButton > button {
@@ -1636,6 +1643,9 @@ textarea {
 .EducationAndCertificationHeader > .Left > p {
   font-size: 22px;
 }
+.EducationAndCertificationHeader > .Left > button {
+  margin-bottom:10px;
+}
 .EducationAndCertificationHeader > .Right {
   flex: 0.5;
   display: flex;
@@ -1667,11 +1677,39 @@ textarea {
   gap: 100px;
 }
 @media screen and (max-width: 490px) {
+  .EducationAndCertificationMainContainer {
+    margin: 10px;
+    padding: 0 10px;
+  }
+  .EducationAndCertificationHeader > .Left > p {
+    font-size: 18px;
+  }
+  .EducationAndCertificationHeader > .Right > img {
+    width: 90vw;
+  }
+  .EducationContainer .schoolImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .EducationContainer .schoolImg > img {
+    width: 90vw;
+  }
+  .EducationAndCertificationHeader {
+    display: inline;
+  }
+  .EducationContainer {
+    
+    gap: 100px;
+    padding: 0px;
+  }
+ 
   .EducationContainer .FirstContainer,
   .EducationContainer .SecondContainer,
   .EducationContainer .ThirdContainer {
     display: flex;
     flex-direction: column-reverse;
+    gap: 50px;
   }
 }
 
@@ -1742,11 +1780,17 @@ textarea {
 .CertificateRow > .CertificateItem:hover {
   border-top: 7px solid var(--primary-color);
   border-left: 7px solid var(--primary-color);
+  transition: 0.5s ease-in;
 }
 .CertificateRow > .CertificateItem img {
   width: 250px;
   height: 180px;
 }
+.CertificateRow > .CertificateItem img:hover {
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
 .CertificateItemMiddle,
 .CertificateItemFooter {
   padding: 0 10px;
