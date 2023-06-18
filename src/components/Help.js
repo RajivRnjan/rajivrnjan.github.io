@@ -35,7 +35,7 @@ function Help() {
                 </div>
                 <div className="ItemDesc">
                     <h3>Mobile App</h3>
-                    <p>0+ Project</p>
+                    <p>1+ Project</p>
                 </div>
             </div>
             

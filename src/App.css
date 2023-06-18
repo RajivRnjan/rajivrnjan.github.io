@@ -27,6 +27,7 @@ a {
   display: flex;
   top: 2px;
   left: 0px;
+
 }
 .navItems a {
   text-decoration: none;
@@ -60,7 +61,7 @@ a {
     z-index: 999;
   }
   .navlogo img {
-    height: 55px;
+    height: 40px;
   }
 
   .navItems li {
@@ -84,6 +85,7 @@ a {
     display: none;
     height: 25px;
     /* margin: 10px 10px 0 0; */
+    
   }
 }
 
@@ -105,6 +107,7 @@ a {
     color: var(--primary-text-color);
     padding: 10px 0 0 0;
     margin: 0;
+    
   }
 
   .navItems a {
@@ -114,9 +117,11 @@ a {
     display: block;
     height: 25px;
     margin-right: 10px;
+    
   }
   .menu {
     display: block;
+    
   }
 }
 
@@ -667,20 +672,38 @@ a {
 /* #### Footer #### */
 /* #### Footer #### */
 .TopRightBottomSection ul li a {
+  display: flex;
+  align-items: center;
   color: var(--primary-bg-color);
   text-decoration: none;
-  transition: all 0.5s;
+ 
 }
 .TopRightBottomSection ul li a:hover {
-  color: rgb(111, 102, 102);
+  color: rgb(133, 140, 133);
+  
+ 
+  
+}
+.TopRightBottomSection ul li a > .arrow {
+  margin-right: 5px;
+  /* color: rgb(133, 140, 133); */
+  color: transparent;
+  transition: 0.3s all ease-in;
+}
+.TopRightBottomSection ul li a:hover > .arrow {
+  font-size: 20px;
+  color:var(--primary-color);
+  transition: 0.3s all ease-in;
 }
 @media screen and (max-width: 1920px) {
   .FooterContainer {
     background-color: var(--footer-bg-color);
     color: #253835;
+    
   }
   .FooterContainer li {
     list-style: none;
+    
   }
   .TopFooter {
     display: flex;
@@ -707,6 +730,7 @@ a {
     font-size: 15px;
     font-weight: 750;
     gap: 10px;
+
   }
   .BottomFooter {
     display: flex;
@@ -1513,6 +1537,8 @@ textarea {
     background-color: var(--secondary-btn-bg-color);
     box-shadow: 2px 2px 5px var(--btn-box-shadow);
     cursor: pointer;
+    transition: 0.5s all ease-in-out;
+
   }
   .ProjectHeaderLeft > .starbtn > button:hover,
   .EducationAndCertificationHeader > .Left > button:hover {
@@ -1522,9 +1548,15 @@ textarea {
     color: white;
     background-color: #56b876;
     box-shadow: 2px 5px 10px var(--btn-box-shadow);
-    transition: 0.3s all ease-in;
   }
-
+   
+  .starbtn > button > a{
+    display: flex;
+    align-items: center;
+  }
+  .starbtn > button .star{
+    margin-right: 5px;
+  }
   .ProjectHeaderRight {
     display: flex;
     flex-direction: column;
@@ -1575,11 +1607,13 @@ textarea {
   .ProjectHeaderLeft > p {
     font-size: 18px;
   }
-  .ProjectHeaderLeft > .starbtn > button {
+  .ProjectHeaderLeft > .starbtn  button {
     font-size: 15px;
     padding: 10px;
+   
     /* font-weight: 600; */
   }
+  
   .ProjectHeaderLeft {
     margin: 0;
     padding: 25px;

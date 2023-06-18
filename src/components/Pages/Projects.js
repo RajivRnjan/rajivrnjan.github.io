@@ -1,7 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import skill from "../../Images/skills.jpg";
-import thumbnail from "../../Images/thumbnail.jpg";
+
+import textRajivImg from  "../../Images/image1.jpg"
+import NewsWalaImg from  "../../Images/image3.jpg"
+import PopAlertImg from  "../../Images/image2.jpg"
+import PranImg from  "../../Images/image4.jpg"
+import PortfolioImg from  "../../Images/portfolio.jpg"
 
 import { BsFillStarFill } from "react-icons/bs";
 import AOS from "aos";
@@ -29,15 +34,18 @@ function Projects() {
 
               <div className="starbtn">
                 <button>
-                  <span>
+                <Link to="https://github.com/RajivRnjan?tab=stars" target="_blank">
+                  <div>
                     <BsFillStarFill
                       className="star"
-                      size={"20px"}
+                      size={"25px"}
                       color="orange"
                     />
-                  </span>
+                  </div>
+                  <div>
                   Star me on Github
-                </button>
+                  </div>
+                  </Link></button>
               </div>
             </div>
 
@@ -61,7 +69,7 @@ function Projects() {
 
             <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
+                  <img src={PortfolioImg} alt="thumbnai" />
                 </div>
                 <div className="ProjectTitle">
                   <h4>My Portfolio</h4>
@@ -80,7 +88,7 @@ function Projects() {
 
               <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
+                  <img src={NewsWalaImg} alt="thumbnai" />
                 </div>
                 <div className="ProjectTitle">
                   <h4>NewsWala</h4>
@@ -107,7 +115,7 @@ function Projects() {
 
               <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
+                  <img src={textRajivImg} alt="thumbnai" />
                 </div>
                 <div className="ProjectTitle">
                   <h4>TextRajiv</h4>
@@ -127,7 +135,7 @@ function Projects() {
 
               <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
+                  <img src={PopAlertImg} alt="thumbnai" />
                 </div>
                 <div className="ProjectTitle">
                   <h4>Popup Alert</h4>
@@ -148,15 +156,15 @@ function Projects() {
 
               <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
-                  <img src={thumbnail} alt="thumbnai" />
+                  <img src={PranImg} alt="thumbnai" />
                 </div>
                 <div className="ProjectTitle">
-                  <h4>Lorem ipsum dolor</h4>
+                  <h4>PRAN STUDENT APP</h4>
                 </div>
 
                 <div className="ProjectDesc">
-                  <p>Web Application</p>
-                  <p>April 2023</p>
+                  <p>App Application</p>
+                  <p>April 2022</p>
                 </div>
 
                 <div className="ProjectItemButton">
@@ -203,7 +211,7 @@ function Projects() {
                 </div>
               </div> */}
 
-              <div className="ProjectItem">
+              {/* <div className="ProjectItem">
                 <div className="ProjectItemThumbnail">
                   <img src={thumbnail} alt="thumbnai" />
                 </div>
@@ -220,7 +228,7 @@ function Projects() {
                   <button>Project Code</button>
                   <button>Live Project</button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
         </div>

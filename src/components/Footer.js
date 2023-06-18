@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsTwitter, BsInstagram } from "react-icons/bs";
 import { AiFillCopyrightCircle } from "react-icons/ai";
+import {MdDoubleArrow} from "react-icons/md";
 
 function Footer() {
   const gotoTopWindow = () => {
@@ -28,27 +29,27 @@ function Footer() {
                 <ul>
                   <li>
                     <Link to="/" onClick={gotoTopWindow}>
-                      Home
+                      <MdDoubleArrow className="arrow" />Home
                     </Link>
                   </li>
                   <li>
                     <Link to="/resume" onClick={gotoTopWindow}>
-                      Resume
+                    <MdDoubleArrow className="arrow"/>Resume
                     </Link>
                   </li>
                   <li>
                     <Link to="/projects" onClick={gotoTopWindow}>
-                      Project
+                    <MdDoubleArrow className="arrow"/>Project
                     </Link>
                   </li>
                   <li>
                     <Link to="/EducationAndCertificate" onClick={gotoTopWindow}>
-                      Education
+                    <MdDoubleArrow className="arrow"/>Education
                     </Link>
                   </li>
                   <li>
                     <Link to="/contact" onClick={gotoTopWindow}>
-                      Contact Us
+                    <MdDoubleArrow className="arrow"/>Contact Us
                     </Link>
                   </li>
                 </ul>
