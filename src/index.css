@@ -31,4 +31,32 @@ code {
   --secondary-btn-bg-color:rgb(239,239,239);
 
   --btn-box-shadow:#cccaca;
+
+
+  --button-font-size:1.1rem;
+  --button-responsive-font-size:1rem;
+
+  /*Font size desktop*/
+  --primary-desktop-heading-font:2.5rem;
+  --secondary-desktop-heading-font:2rem;
+  --tertiary-desktop-heading-font:1.5rem;
+
+  --desktop-paragraph-font:1.2rem;
+
+
+  /*Font size tablet*/
+  --primary-tablet-heading-font:2rem;
+  --secondary-tablet-heading-font:1.5rem;
+  --tertiary-tablet-heading-font:1.3rem;
+
+  --tablet-paragraph-font:1rem;
+
+
+  /*Font size phone*/
+  --primary-phone-heading-font:1.7rem;
+  --secondary-phone-heading-font:1.3rem;
+  --tertiary-phone-heading-font:1rem;
+  
+
+  --phone-paragraph-font:0.9rem;
 }

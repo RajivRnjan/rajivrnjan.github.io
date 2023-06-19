@@ -190,7 +190,8 @@ a {
     margin: 0;
   }
   .RightHeroContainer p {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size:var(--desktop-paragraph-font);
     color: #727171;
   }
   .HeroSectionButton {
@@ -206,7 +207,8 @@ a {
   .HeroSectionButton1 {
     padding: 10px 30px;
     border-radius: 30px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: var(--button-font-size);
     cursor: pointer;
     background-color: var(--primary-text-color);
     border: 2px solid var(--primary-text-color);
@@ -215,7 +217,7 @@ a {
   .HeroSectionButton2 {
     padding: 10px 30px;
     border-radius: 30px;
-    font-size: 1rem;
+    font-size: var(--button-font-size);
     background-color: var(--primary-text-color);
     cursor: pointer;
     border: 2px solid var(--primary-text-color);
@@ -265,7 +267,7 @@ a {
     font-size: 15px;
   }
   .RightHeroContainer .Description p {
-    font-size: 15px;
+    font-size: var(--phone-paragraph-font)
   }
 }
 
@@ -343,33 +345,29 @@ a {
   .rightSectionHelp {
     margin: 40px;
   }
-  /* .ItemIcon {
-    width: 70px;
-    height: 70px;
-  } */
+ 
   .leftSectionHelp .Item {
     padding: 20px;
   }
   .leftSectionHelp .Item .ItemDesc h3 {
     margin: 0;
-    font-size: 25px;
+    font-size: var(--tertiary-desktop-heading-font);
   }
   .leftSectionHelp .Item .ItemDesc p {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
   .rightSectionHelp .desc p {
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
   .rightSectionHelp {
     display: flex;
     flex-direction: column;
     flex: 0.6;
-
     padding: 0 30px;
   }
   .rightSectionHelp h2 {
-    font-size: 30px;
+    font-size: var(--secondary-desktop-heading-font);
   }
 }
 @media screen and (max-width: 991px) {
@@ -399,21 +397,19 @@ a {
   }
   .leftSectionHelp .Item .ItemDesc h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--tertiary-tablet-heading-font);
   }
   .leftSectionHelp .Item .ItemDesc p {
     margin: 0;
-    font-size: 17px;
+    font-size: var(--tablet-paragraph-font);
   }
   .rightSectionHelp .desc p {
-    font-size: 15px;
+    font-size: var(--tablet-paragraph-font);
   }
   .rightSectionHelp h2 {
-    font-size: 25px;
+    font-size: var(--secondary-tablet-heading-font);
   }
-  /* .navItems ul {
-    display: none;
-  } */
+  
   /*Work Experience*/
   .BottomRightContainer {
     display: flex;
@@ -428,10 +424,10 @@ a {
   }
   /*My Work*/
   .MyWorkHeader .Heading h1 {
-    font-size: 30px;
+    font-size: var(--primary-tablet-heading-font);
   }
   .MyWorkHeader .ExploreMore h2 {
-    font-size: 16px;
+    font-size: var(--button-font-size);
     color: #00adef;
   }
 }
@@ -446,28 +442,27 @@ a {
 
   .leftSectionHelp .Item .ItemDesc h3 {
     margin: 0;
-    font-size: 15px;
+    font-size: var(--tertiary-phone-heading-font);
   }
   .leftSectionHelp .Item .ItemDesc p {
     margin: 0;
-    font-size: 14px;
+    font-size: var(--phone-paragraph-font);
   }
   .rightSectionHelp .desc p {
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: var(--phone-paragraph-font);
   }
   .rightSectionHelp {
     display: flex;
     flex-direction: column;
     flex: 0.6;
-
     padding: 0;
   }
+  
   .rightSectionHelp h2 {
-    font-size: 20px;
+    font-size: var(--secondary-phone-heading-font);
   }
-  /* .navItems ul {
-    display: none;
-  } */
+  
 }
 
 /* #### My Journey #### */
@@ -475,12 +470,12 @@ a {
 
 .WorkExperienceContainer {
   width: 100%;
-
   background-color: #f8f7f1;
   padding-bottom: 50px;
 }
 .WorkExperienceContainer .TopSection h1 {
   text-align: center;
+  font-size: var(--primary-desktop-heading-font);
 }
 
 .BottomLeftContainer .Item h2,
@@ -490,7 +485,7 @@ a {
 @media screen and (max-width: 1920px) {
   .TopSection {
     padding: 20px 0 20px 50px;
-    font-size: 20px;
+    /* font-size: 20px; */
     display: flex;
     justify-content: flex-start;
   }
@@ -503,14 +498,13 @@ a {
     flex: 0.4;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: center; */
-    padding-left: 50px;
+  padding-left: 50px;
   }
   .BottomRightContainer {
     display: flex;
     flex: 0.6;
     padding: 0 40px;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
     gap: 20px;
   }
   .BottomRightContainer .ExperienceItems {
@@ -531,9 +525,14 @@ a {
 @media screen and (max-width: 490px) {
   .TopSection {
     padding: 15px 20px;
-    font-size: 15px;
+    
   }
-
+  .WorkExperienceContainer .TopSection h1 {
+    font-size: var(--primary-phone-heading-font);
+  }
+  .ExperienceItem h2{
+    font-size: var(--secondary-phone-heading-font);
+  }
   .BottomSection {
     display: flex;
     flex-direction: column;
@@ -545,7 +544,7 @@ a {
     display: flex;
     flex: 0.6;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: var(--phone-paragraph-font);
     gap: 10px;
   }
   .BottomRightContainer .ExperienceItems {
@@ -596,7 +595,6 @@ a {
 .InnerCircle {
   width: 25px;
   height: 25px;
-
   border-radius: 50%;
 }
 .InnerCircle1-bg-color {
@@ -629,10 +627,11 @@ a {
     align-items: center;
   }
   .MyWorkHeader .Heading h1 {
-    font-size: 40px;
+    font-size: var(--primary-desktop-heading-font);
   }
   .MyWorkHeader .ExploreMore h2 {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: var(--tertiary-desktop-heading-font);
     color: #00adef;
   }
 
@@ -651,7 +650,6 @@ a {
 @media screen and (max-width: 490px) {
   .react-multiple-carousel__arrow {
     position: absolute;
-
     z-index: 100;
   }
   .MyWorkHeader {
@@ -661,10 +659,12 @@ a {
     padding: 0 20px;
   }
   .MyWorkHeader .Heading h1 {
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: var(--secondary-phone-heading-font);
   }
   .MyWorkHeader .ExploreMore h2 {
-    font-size: 10px;
+    /* font-size: 10px; */
+    font-size: var(--phone-paragraph-font);
     color: #00adef;
   }
 }
@@ -680,9 +680,6 @@ a {
 }
 .TopRightBottomSection ul li a:hover {
   color: rgb(133, 140, 133);
-  
- 
-  
 }
 .TopRightBottomSection ul li a > .arrow {
   margin-right: 5px;
@@ -691,19 +688,17 @@ a {
   transition: 0.3s all ease-in;
 }
 .TopRightBottomSection ul li a:hover > .arrow {
-  font-size: 20px;
+  font-size: var(--desktop-paragraph-font);
   color:var(--primary-color);
   transition: 0.3s all ease-in;
 }
 @media screen and (max-width: 1920px) {
   .FooterContainer {
     background-color: var(--footer-bg-color);
-    color: #253835;
-    
+    color: #253835;    
   }
   .FooterContainer li {
-    list-style: none;
-    
+    list-style: none;    
   }
   .TopFooter {
     display: flex;
@@ -713,16 +708,18 @@ a {
 
   .TopLeftFooter h2 {
     /* width: 500px; */
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: var(--secondary-desktop-heading-font);
   }
   .TopLeftFooter h1 {
-    font-size: 40px;
+    font-size: var(--primary-desktop-heading-font);
   }
   .sayinghii {
     color: #db1f38;
   }
   .TopRightHeading h2 {
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: var(--secondary-desktop-heading-font);
   }
   .TopRightBottomSection ul {
     display: flex;
@@ -730,7 +727,6 @@ a {
     font-size: 15px;
     font-weight: 750;
     gap: 10px;
-
   }
   .BottomFooter {
     display: flex;
@@ -769,13 +765,13 @@ a {
     padding: 10px;
   }
   .TopLeftFooter h2 {
-    font-size: 25px;
+    font-size: var(--secondary-tablet-heading-font);
   }
   .TopRightFooter .TopRightHeading {
-    font-size: 20px;
+    font-size: var(--tertiary-tablet-heading-font)
   }
   .TopLeftFooter h1 {
-    font-size: 30px;
+    font-size: var(--primary-tablet-heading-font);
   }
   .TopRightBottomSection ul {
     display: flex;
@@ -796,15 +792,16 @@ a {
     align-items: flex-start;
   }
   .TopLeftFooter h2 {
-    font-size: 20px;
+    font-size: var(--secondary-phone-heading-font);
   }
 
   .TopRightHeading h2 {
     margin: 0;
-    font-size: 23px;
+    /* font-size: 23px; */
+    font-size: var(--secondary-phone-heading-font);
   }
   .TopLeftFooter h1 {
-    font-size: 20px;
+    font-size: var(--secondary-phone-heading-font);
   }
 
   .TopRightBottomSection ul {
@@ -818,14 +815,12 @@ a {
   .BottomFooter {
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
-
     border: none;
   }
   .BottomLeftFooter h2 {
     margin-top: 0;
-    font-size: 26px;
+    font-size: var(--primary-phone-heading-font);
     font-style: italic;
   }
   .BottomMiddleFooter {
@@ -833,7 +828,7 @@ a {
   }
   .BottomMiddleFooter p {
     margin: 0;
-    font-size: 13px;
+    font-size: var(--phone-paragraph-font);
     font-weight: 800px;
     color: var(--primary-bg-color);
   }
@@ -857,7 +852,7 @@ a {
     padding: 10px 30px;
   }
   .resume {
-    font-size: 40px;
+    font-size: var(--primary-desktop-heading-font);
   }
   .topResumeContainer,
   .bottomResumeContainer {
@@ -880,7 +875,7 @@ a {
 
   .topLeftmostResumeContainerHeading,
   .topRightmostResumeContainerHeading {
-    font-size: 25px;
+    font-size: var(--tertiary-desktop-heading-font);
   }
   .topLeftResumeContainer,
   .topRightResumeContainer {
@@ -892,7 +887,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 0.5;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
 
   .topRightResumeContainer,
@@ -900,7 +895,7 @@ a {
     display: flex;
     flex-direction: column;
     flex: 0.5;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
 
   .topLeftResumeContainer > .EducationItem,
@@ -941,18 +936,21 @@ a {
 
   .EduacationDesc li::marker {
     content: "➤";
-    font-size: 18px;
+   
+    font-size: var(--desktop-paragraph-font);
     color: var(--secondary-text-color);
+    
   }
   .topLeftResumeContainer .EducationItem h4,
   .topRightResumeContainer .ExperienceItem h4 {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
   .topLeftResumeContainer,
   .topRightResumeContainer .ExperienceItem p {
     margin: 15px 0 0 0;
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: var(--desktop-paragraph-font);
   }
   .topLeftResumeContainer .EducationItem .date,
   .topRightResumeContainer .ExperienceItem .date {
@@ -974,6 +972,9 @@ a {
     margin: 0px;
     padding: 0 15px;
   }
+  .resume{
+    font-size: var(--primary-phone-heading-font);
+  }
   .topResumeContainer,
   .bottomResumeContainer {
     display: flex;
@@ -982,21 +983,28 @@ a {
     margin: 10px;
     gap: 10px;
   }
+  .bottomLeftResumeContainer>h2,.bottomRightResumeContainer>h2{
+    font-size: var(--primary-phone-heading-font);
+  }
   .TopLevelResumeContainer {
     display: flex;
     flex-direction: column;
   }
-  /* .topLeftmostResumeContainer,
-.topRightmostResumeContainer {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-} */
-  .topLeftmostResumeContainerHeading,
-  .topRightmostResumeContainerHeading {
-    font-size: 20px;
+  .bottomLeftResumeContainer{
+    font-size: var(--phone-paragraph-font);
   }
-}
+ 
+  .topLeftmostResumeContainerHeading > h2,
+  .topRightmostResumeContainerHeading >h2{
+    font-size: var(--primary-phone-heading-font);
+  }
+  .EduacationDesc{
+    font-size: var(--phone-paragraph-font);
+  }
+  .EduacationDesc li::marker {
+   font-size: var(--phone-paragraph-font);
+   }
+  }
 
 .progress {
   /* width:100%; */
@@ -1066,6 +1074,7 @@ a {
   display: flex;
   justify-content: space-around;
 }
+
 @media screen and (max-width: 490px) {
   .circularProgressBarContainer {
     display: flex;
@@ -1112,13 +1121,12 @@ a {
 .innerCircle #number {
   font-weight: 700;
   color: #555;
-
-  font-size: 25px;
+  font-size: var(--primary-phone-heading-font);
 }
 .innerCircle #skill {
   font-weight: 700;
   color: #555;
-  font-size: 12px;
+  font-size: var(--phone-paragraph-font);
 }
 .svg {
   position: absolute;
@@ -1180,7 +1188,8 @@ textarea {
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 15px;
+  /* font-size: 15px; */
+  font-size: var(--desktop-paragraph-font);
   width: 100%;
 }
 input:-webkit-autofill {
@@ -1223,76 +1232,28 @@ input:focus {
 }
 
 .GetInTouch > .left_container > h2 {
-  font-size: 45px;
+  font-size: var(--primary-desktop-heading-font);
   color: var(--primary-bg-color);
 }
 .GetInTouch > .left_container > p {
   color: var(--secondary-text-color);
   margin: 0 0 40px 0;
+  font-size: var(--desktop-paragraph-font);
 }
 .GetInTouch > .left_container > form {
   padding:0;
 }
 
-@media screen and (max-width: 490px) {
-  .GetInTochMainContainer {
-    margin: 5px;
-    padding: 0;
-  }
-  .GetInTouch {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    /* padding: 10px; */
-    gap: 20px;
-  }
-  .right_container > img {
-    height: 200px;
-    width: 360px;
-  }
-  .ContactFooterContainer {
-    margin: 20px;
-    padding: 15px;
-  }
-  .inputContainer {
-    display: flex;
-    align-items: center;
-    column-gap: 5px;
-    border-radius: 10px;
-    background-color: var(--secondary-bg-color);
-  }
-  .left_container {
-    display: flex;
-    flex-direction: column;
-    flex: 0.5;
-    padding: 10px;
-    align-items: center;
 
-    align-items: stretch;
-    margin: 0;
-  }
-  .right_container > .socialIcon {
-    display: none;
-  }
-  .left_container > form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-  }
-}
 
 .left_container > form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 .inputContainer {
   display: flex;
   align-items: center;
-
   column-gap: 5px;
   padding: 15px;
   border-radius: 10px;
@@ -1310,12 +1271,11 @@ textarea {
 .left_container > form > button {
   background-color: var(--primary-color);
   box-shadow: 3px 3px 3px var(--btn-box-shadow);
-
   width: max-content;
   padding: 15px 30px;
   /* color: var(--primary-text-color); */
   color: black;
-  font-size: 17px;
+  font-size: var(--button-font-size);
   font-weight: 700;
   border: none;
   border-radius: 5px;
@@ -1325,7 +1285,6 @@ textarea {
   background-color: #267344;
   box-shadow: 3px 3px 5px var(--btn-box-shadow);
   color: var(--primary-text-color);
-
   /* border: none; */
   transition: 0.5s all ease-in-out;
 }
@@ -1359,13 +1318,10 @@ textarea {
   transition: 0.5s all ease-in-out;
 }
 
-/* .right_container .socialIcon .GithubIcon{
-  color: #00adef;
-} */
+
 .right_container .socialIcon .GithubIcon:hover {
   color: white;
   background-color: black;
-
   transition: 0.5s all ease-in-out;
 }
 .right_container .socialIcon .twitterIcon {
@@ -1378,7 +1334,7 @@ textarea {
 }
 
 .ContactFooterContainer > p {
-  font-size: 20px;
+  font-size: var(--desktop-paragraph-font);
   font-weight: 700;
   color: var(--tertiary-color);
 }
@@ -1412,6 +1368,68 @@ textarea {
   color: white;
   transition: 0.5s all ease-in-out;
 }
+
+@media screen and (max-width: 490px) {
+  .GetInTochMainContainer {
+    margin: 5px;
+    padding: 0;
+  }
+  .GetInTouch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+    gap: 20px;
+  }
+  .GetInTouch > .left_container > h2{
+    font-size: var(--primary-phone-heading-font);
+  }
+  .left_container > form > button{
+    font-size: var(--button-responsive-font-size);
+  }
+  .GetInTouch > .left_container > p{
+    font-size: var(--phone-paragraph-font);
+  }
+  .right_container > img {
+    height: 200px;
+    width: 360px;
+  }
+  .ContactFooterContainer {
+    margin: 20px;
+    padding: 15px;
+  }
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+  }
+  input,textarea{
+    font-size: var(--phone-paragraph-font);
+  }
+  .left_container {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+    padding: 10px;
+    align-items: center;
+    align-items: stretch;
+    margin: 0;
+    width:80%;
+  }
+  .right_container > .socialIcon {
+    display: none;
+  }
+  .left_container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+}
+
 /* #### Projects and Experience #### */
 /* #### Projects and Experience #### */
 .ProjectItem {
@@ -1450,7 +1468,7 @@ textarea {
   }
   .ProjectsMenu > button {
     padding: 15px;
-    font-size: 18px;
+    font-size: var(--button-font-size);
     box-shadow: 2px 2px 3px var(--btn-box-shadow);
     border-radius: 5px;
     border: none;
@@ -1476,7 +1494,7 @@ textarea {
     /* align-items: flex-start; */
   }
   .ProjectTitle > h4 {
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
     margin: 5px 0;
   }
   .ProjectDesc {
@@ -1492,7 +1510,7 @@ textarea {
     justify-content: space-between;
   }
   .ProjectItemButton > button {
-    font-size: 18px;
+    font-size: var(--button-font-size);
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -1532,7 +1550,7 @@ textarea {
     padding: 15px;
     border-radius: 5px;
     border: none;
-    font-size: 17px;
+    font-size: var(--button-font-size);
     font-weight: 600;
     background-color: var(--secondary-btn-bg-color);
     box-shadow: 2px 2px 5px var(--btn-box-shadow);
@@ -1565,11 +1583,11 @@ textarea {
     justify-content: center;
   }
   .ProjectHeaderLeft > h2 {
-    font-size: 40px;
+    font-size: var(--primary-desktop-heading-font);
     margin-bottom: 0;
   }
   .ProjectHeaderLeft > p {
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
   }
   .ProjectHeaderRight > img {
     width: 70%;
@@ -1601,17 +1619,17 @@ textarea {
     width: 90vw;
   }
   .ProjectHeaderLeft > h2 {
-    font-size: 25px;
+    font-size: var(--primary-phone-heading-font);
     margin-bottom: 0;
   }
   .ProjectHeaderLeft > p {
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: var(--phone-paragraph-font);
   }
   .ProjectHeaderLeft > .starbtn  button {
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: var(--button-responsive-font-size);
     padding: 10px;
-   
-    /* font-weight: 600; */
   }
   
   .ProjectHeaderLeft {
@@ -1632,17 +1650,17 @@ textarea {
   }
   .ProjectsMenu > button {
     padding: 12px;
-    font-size: 15px;
+    font-size: var(--button-responsive-font-size);
   }
   .ProjectItemButton > button {
-    font-size: 15px;
+    font-size: var(--button-responsive-font-size);
     padding: 10px;
   }
   .ProjectTitle > h4 {
-    font-size: 17px;
+    font-size: var(--tertiary-phone-heading-font);
   }
   .ProjectDesc > p {
-    font-size: 15px;
+    font-size: var(--phone-paragraph-font);
   }
   .ProjectHeaderRight > img {
     width: 80%;
@@ -1671,11 +1689,12 @@ textarea {
   /* padding: 20px; */
 }
 .EducationAndCertificationHeader > .Left > h2 {
-  font-size: 45px;
+  font-size: var(--primary-desktop-heading-font);
   margin: 0;
 }
 .EducationAndCertificationHeader > .Left > p {
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: var(--desktop-paragraph-font);
 }
 .EducationAndCertificationHeader > .Left > button {
   margin-bottom:10px;
@@ -1694,7 +1713,7 @@ textarea {
   padding: 30px;
 }
 .EducationContainer > h3 {
-  font-size: 35px;
+  font-size: var(--secondary-desktop-heading-font);
   margin-bottom: 0;
 }
 .EducationContainer .FirstContainer,
@@ -1710,13 +1729,48 @@ textarea {
   justify-content: space-around;
   gap: 100px;
 }
+
+
+.schoolDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.SchoolDescHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.SchoolDescHeader h4 {
+  font-size: var(--primary-phone-heading-font);
+  margin: 0;
+}
+.SchoolDescHeader > .SchoolName > span {
+  font-size: var(--secondary-phone-heading-font);
+  font-weight: 700;
+}
+.schoolDesc > span {
+  font-size: var(--tertiary-phone-heading-font);
+  background-color: var(--footer-bg-color);
+  padding: 5px 20px;
+  width: max-content;
+  border-radius: 3px;
+  font-weight: 700;
+}
+.schoolDesc > p {
+  font-size: var(--desktop-paragraph-font);
+  margin: 0;
+}
+
 @media screen and (max-width: 490px) {
   .EducationAndCertificationMainContainer {
     margin: 10px;
     padding: 0 10px;
   }
   .EducationAndCertificationHeader > .Left > p {
-    font-size: 18px;
+    font-size: var(--phone-paragraph-font);
   }
   .EducationAndCertificationHeader > .Right > img {
     width: 90vw;
@@ -1732,10 +1786,12 @@ textarea {
   .EducationAndCertificationHeader {
     display: inline;
   }
-  .EducationContainer {
-    
-    gap: 100px;
+  .EducationContainer {    
+    gap: 50px;
     padding: 0px;
+  }
+  .EducationAndCertificationHeader > .Left > h2 {
+    font-size: var(--primary-phone-heading-font);
   }
  
   .EducationContainer .FirstContainer,
@@ -1745,49 +1801,31 @@ textarea {
     flex-direction: column-reverse;
     gap: 50px;
   }
+  .SchoolDescHeader h4{
+    font-size: var(--secondary-phone-heading-font) ;
+  }
+  .schoolDesc > p {
+    font-size: var(--phone-paragraph-font);
+  
+  }
+  .SchoolDescHeader > .SchoolName > span{
+    font-size: var(--tertiary-phone-heading-font);
+  }
+  .SchoolLogo>img{
+    width: 20vw;
+
+  }
+  
 }
 
-.schoolDesc {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
-  gap: 15px;
-}
-
-.SchoolDescHeader {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.SchoolDescHeader h4 {
-  font-size: 30px;
-  margin: 0;
-}
-.SchoolDescHeader > .SchoolName > span {
-  font-size: 20px;
-  font-weight: 700;
-}
-.schoolDesc > span {
-  font-size: 17px;
-  background-color: var(--footer-bg-color);
-  padding: 5px 20px;
-  width: max-content;
-
-  border-radius: 3px;
-}
-.schoolDesc > p {
-  font-size: 20px;
-  margin: 0;
-}
 /* ### CERTIFICATE ### */
 /* ### CERTIFICATE ### */
+@media screen and (max-width: 1920px) {
 .CertificationContainer {
   padding: 30px;
 }
 .CertificationContainer > h4 {
-  font-size: 45px;
+  font-size: var(--primary-desktop-heading-font);
 }
 .CertificateRow {
   display: flex;
@@ -1831,7 +1869,7 @@ textarea {
 }
 .CertificateItemMiddle > h4 {
   margin: 0;
-  font-size: 20px;
+  font-size: var(--desktop-paragraph-font);
 }
 .CertificateItemMiddle > h5 {
   margin: 10px 0;
@@ -1840,6 +1878,14 @@ textarea {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+}
+
+@media screen and (max-width: 490px) {
+ 
+.CertificationContainer > h4 ,.EducationContainer > h3 {
+  font-size: var(--primary-phone-heading-font);
+}
 }
 
 /*### Thanking You ###*/
@@ -1853,7 +1899,7 @@ textarea {
   }
   .thankingContainer > p {
     margin: 0;
-    font-size: 20px;
+    font-size: var(--desktop-paragraph-font);
     border: 1px solid var(--secondary-bg-color);
     padding: 35px 30px;
     border-radius: 5px 25px;
@@ -1867,7 +1913,7 @@ textarea {
 
 @media screen and (max-width: 920px) {
   .thankingContainer > p {
-    font-size: 18px;
+    font-size: var(--tablet-paragraph-font);
   }
   .thankingContainer > .humanImage > img {
     width: 200px;
@@ -1878,7 +1924,7 @@ textarea {
     margin: 40px 30px;
   }
   .thankingContainer > p {
-    font-size: 15px;
+    font-size: var(--phone-paragraph-font);
     padding: 20px;
   }
   .thankingContainer > .humanImage {
