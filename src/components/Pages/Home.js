@@ -42,8 +42,10 @@ function Home() {
           <img className="human" src={human} alt="human" />
         </div>
 
-        <GetInTouch />
       </div>
+        <div className="GetInTochMainContainer">
+        <GetInTouch />
+        </div>
     </>
   );
 }
