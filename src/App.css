@@ -494,7 +494,7 @@ a {
   font-size: var(--primary-desktop-heading-font);
 }
 
-.BottomLeftContainer .Item h2,
+
 .BottomRightContainer .ExperienceItem h2 {
   margin: 0;
 }
@@ -512,9 +512,11 @@ a {
   .BottomLeftContainer {
     display: flex;
     flex: 0.4;
-    flex-direction: column;
-    justify-content: space-around;
-  padding-left: 50px;
+    padding:20px 0 0 80px;
+  
+  }
+  .BottomLeftContainer>img{
+    width: 470px;
   }
   .BottomRightContainer {
     display: flex;
@@ -637,6 +639,7 @@ a {
 /* #### My Work #### */
 /* #### My Work #### */
 @media screen and (max-width: 1920px) {
+
   .MyWorkHeader {
     display: flex;
     justify-content: space-around;
@@ -664,10 +667,15 @@ a {
   }
 }
 @media screen and (max-width: 490px) {
-  .react-multiple-carousel__arrow {
+  /* .react-multiple-carousel__arrow {
     position: absolute;
     z-index: 100;
+    min-height: 25px;
+    min-width: 25px;
   }
+  .react-multiple-carousel__arrow:before{
+   font-size: 15px;
+  } */
   .MyWorkHeader {
     display: flex;
     justify-content: space-around;
@@ -1463,6 +1471,8 @@ textarea {
   border-top: 7px solid var(--btn-box-shadow);
   border-radius: 15px;
   padding: 15px;
+  width: 250px;
+  height: fit-content;
   /* box-shadow: 2px 2px 3px var(--btn-box-shadow); */
   transition: all 0.3s ease-in-out;
 }
@@ -1513,6 +1523,7 @@ textarea {
   .ProjectItemThumbnail > img {
     width: -webkit-fill-available;
     height: 200px;
+    padding-bottom: 10px;
   }
   .ProjectTitle {
     display: flex;
@@ -1521,7 +1532,11 @@ textarea {
   }
   .ProjectTitle > h4 {
     font-size: var(--desktop-paragraph-font);
-    margin: 5px 0;
+    margin: 5px 0 0 0;
+  }
+  .ProjectAbout>p{
+    margin:0 0 5px 0;
+    
   }
   .ProjectDesc {
     display: flex;
@@ -1529,6 +1544,8 @@ textarea {
   }
   .ProjectDesc > p {
     margin-top: 0;
+    color: var(--secondary-text-color);
+    font-weight:700;
   }
   .ProjectItemButton {
     display: flex;
@@ -1537,6 +1554,8 @@ textarea {
   }
   .ProjectItemButton > button {
     font-size: var(--button-font-size);
+    font-weight: 600;
+    
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -1544,11 +1563,16 @@ textarea {
     box-shadow: 2px 2px 3px var(--btn-box-shadow);
     cursor: pointer;
   }
-  .ProjectItemButton > button:hover {
-    color: white;
-    background-color: #696686;
+  .ProjectItemButton > button:hover {    
+    /* background-color: var(primary-btn-bg-color); */
+    background-color: var(--primary-color);
+   
     transition: all 0.5s ease-in-out;
+    font-weight: 700;
     /* box-shadow: 2px 2px 3px var(--btn-box-shadow); */
+  }
+  .ProjectItemButton > button> a:hover{
+    color: white;
   }
   .ProjectHeader {
     display: flex;

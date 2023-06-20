@@ -2,6 +2,7 @@ import {React,useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import humansuccess from "../Images/success.png"
 
 function MyJourney() {
   useEffect(()=>{
@@ -17,7 +18,7 @@ function MyJourney() {
             </header>
           </div>
 
-          <div className="BottomSection">
+          {/* <div className="BottomSection">
             <div className="BottomLeftContainer">
               <div className="Item">
                 <h2>Matriculation</h2>
@@ -31,6 +32,10 @@ function MyJourney() {
                 <h2>Graduation </h2>
                 <p>2021 - 2024</p>
               </div>
+            </div> */}
+          <div className="BottomSection">
+            <div className="BottomLeftContainer">
+              <img src = {humansuccess} alt="success"/>
             </div>
 
             {/* <div className="RightPart"> */}

@@ -4,6 +4,7 @@ import HeroSection from "../HeroSection";
 import Help from "../Help";
 import MyJourney from "../MyJourney";
 import MyWork from "../MyWork";
+import GetInTouch from "../GetInTouch";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +22,7 @@ function Home() {
       <Help />
       <MyJourney />
       <MyWork />
+
      
 
       <div className="thankingContainer">
@@ -39,6 +41,8 @@ function Home() {
         <div className="humanImage">
           <img className="human" src={human} alt="human" />
         </div>
+
+        <GetInTouch />
       </div>
     </>
   );
