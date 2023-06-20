@@ -67,7 +67,7 @@ function Resume() {
                 <div className="EducationItem" data-aos="fade-up">
                   <h4>Graduation</h4>
                   <span className="date">2024</span>
-                  <span>AICTE</span>
+                  <span>VBU</span>
                   <div className="EduacationDesc">
                     <ul>
                       <li>
@@ -75,7 +75,7 @@ function Resume() {
                         Vinoba Bhave University
                       </li>
                       <li>BCA</li>
-                      <li>8.3 SGGPA</li>
+                      <li>8.3 SGPA</li>
                     </ul>
                   </div>
                 </div>

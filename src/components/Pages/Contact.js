@@ -27,23 +27,32 @@ function Contact() {
             <h2 id="Heading">Get In Touch</h2>
             <p>We are there for you! How can I help?</p>
 
-            <form>
+            <form method="post" action="https://github.us8.list-manage.com/subscribe/post?u=7b7a766ccf7058cfb230b1f4e&amp;id=936f84fabf&amp;f_id=009e70e0f0">
               <div className="inputContainer" data-aos="fade-right">
-                <BsFillPeopleFill />
-                <input type="text" name="name" placeholder="Enter your Name" />
+                <BsFillPeopleFill size="1.4rem"/>
+                <input type="text" name="NAME" placeholder="Enter your Name" required/>
               </div>
 
               <div className="inputContainer" data-aos="fade-right">
-                <MdEmail />
-                <input type="email" name="email" placeholder="Enter Email" />
+                <MdEmail size="1.4rem" />
+                <input type="email" name="EMAIL" placeholder="Enter Email" required/>
               </div>
 
               <div className="inputContainer" data-aos="fade-right">
-                <BsPenFill />
-                <textarea placeholder="Write something about your query"></textarea>
+                <BsPenFill size="1.4rem" />
+                <textarea name="MESSAGE" placeholder="Write something about your query" required></textarea>
               </div>
-              <button type="submit">Send</button>
+              <button type="submit"  value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >Send</button>
+             
             </form>
+
+
+
+            
+{/* <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[6]='NAME';ftypes[6]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='MESSAGE';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> */}
+
+
           </div>
           <div className="right_container" >
             <img src={contactImg} alt="contactimage" data-aos="fade-down"/>

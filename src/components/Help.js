@@ -29,6 +29,7 @@ function Help() {
             </div>
             </Link>
             
+            <Link to="/projects" >
             <div className="Item">
                 <div className="ItemIcon ItemIcon2">
                     <TbDeviceMobile size={"40px"} color={"white"}/>
@@ -38,6 +39,7 @@ function Help() {
                     <p>1+ Project</p>
                 </div>
             </div>
+            </Link>
             
             <Link to="/EducationAndCertificate">
             <div className="Item">

@@ -1,6 +1,17 @@
 body {
   overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  background: transparent;
+  
+ 
+}
+
 
 a {
   text-decoration: none;
@@ -67,6 +78,12 @@ a {
   .navItems li {
     list-style: none;
     padding: 12px 20px;
+  }
+  .navItems>ul:hover li{
+    filter: blur(1px);
+  }
+  .navItems>ul>li:hover{
+    filter:blur(0);
   }
 
   #nav a:hover,
@@ -759,6 +776,18 @@ a {
   .socialIcon4 {
     color: #c32039;
   }
+  .socialIcon1:hover {
+    color: #7eafc0;
+  }
+  .socialIcon2:hover {
+    color: rgb(69, 67, 67);
+  }
+  .socialIcon3:hover {
+    color: #6495a4;
+  }
+  .socialIcon4:hover {
+    color: #93414d;
+  }
 }
 @media screen and (max-width: 767px) {
   .FooterContainer {
@@ -1192,9 +1221,7 @@ textarea {
   font-size: var(--desktop-paragraph-font);
   width: 100%;
 }
-input:-webkit-autofill {
-  background: transparent;
-}
+
 input:focus {
   outline: none;
 }
