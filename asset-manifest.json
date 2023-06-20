@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ef87a27e.css",
+    "main.js": "./static/js/main.f24f87da.js",
+    "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/vbuImg.png": "./static/media/vbuImg.274fa61111aa48c1f890.png",
+    "static/media/portfolio.jpg": "./static/media/portfolio.3fa2cbcf9d989e8fa364.jpg",
+    "static/media/national public school.jpg": "./static/media/national public school.f0af7da4f7b303485f63.jpg",
+    "static/media/skills.jpg": "./static/media/skills.c692978a5eb54eda031c.jpg",
+    "static/media/human.png": "./static/media/human.548f3bce3e867601bce6.png",
+    "static/media/image4.jpg": "./static/media/image4.43d0feecdbd2bfd5ed89.jpg",
+    "static/media/RajivPhoto.jpg": "./static/media/RajivPhoto.def5cec75a941d1d0180.jpg",
+    "static/media/isc.jpg": "./static/media/isc.8dfcbda0057a01f11306.jpg",
+    "static/media/contact-us.jpg": "./static/media/contact-us.24fcc236ce80c66cd50b.jpg",
+    "static/media/education.jpg": "./static/media/education.4a829082e390bb09e2d1.jpg",
+    "static/media/image3.jpg": "./static/media/image3.a6a410de057dc074566a.jpg",
+    "static/media/image1.jpg": "./static/media/image1.d3142c61c2f0926c5aad.jpg",
+    "static/media/Rajiv Logo.png": "./static/media/Rajiv Logo.9744b81699d2a8b466c3.png",
+    "static/media/vbulogo.jpg": "./static/media/vbulogo.5a1879ff0651846249c8.jpg",
+    "static/media/image2.jpg": "./static/media/image2.892f4bf47b1be50872ac.jpg",
+    "static/media/FreeCodeCamp.png": "./static/media/FreeCodeCamp.72fe992f475f30592602.png",
+    "static/media/isclogo.png": "./static/media/isclogo.aae11d30e3ddb1c4552e.png",
+    "static/media/schoolLogo.jpg": "./static/media/schoolLogo.7dc238cc776f63c16e6e.jpg",
+    "static/media/greatLearning.png": "./static/media/greatLearning.082ac5422ef39d31e784.png",
+    "static/media/revicons.eot": "./static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "./static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "./static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "./index.html",
+    "main.ef87a27e.css.map": "./static/css/main.ef87a27e.css.map",
+    "main.f24f87da.js.map": "./static/js/main.f24f87da.js.map",
+    "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef87a27e.css",
+    "static/js/main.f24f87da.js"
+  ]
+}
