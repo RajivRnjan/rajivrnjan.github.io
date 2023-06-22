@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'
-import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Image from "../Images/RajivPhoto.jpg";
 
 function HeroSection() {
-  useEffect( ()=>{
-  AOS.init({duration:2000})
-  },[]);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <main>
@@ -41,7 +40,10 @@ function HeroSection() {
               </div>
               <div className="HeroSectionButton">
                 <button className="HeroSectionButton1">Download CV</button>
-                <Link to="/contact"><button className="HeroSectionButton2">Contact</button></Link>
+                <a href="#getintouch">
+                  <button className="HeroSectionButton2">Contact</button>
+                </a>
+                {/* <Link to="/contact"></Link> */}
               </div>
             </div>
           </div>

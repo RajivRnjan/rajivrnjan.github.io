@@ -7,6 +7,7 @@ import About from'./components/Pages/About';
 import Resume from './components/Pages/Resume'
 import Projects from './components/Pages/Projects'
 import EducationAndCertificate from './components/Pages/EducationAndCertificate';
+import Certificate from './components/Certificate';
 import Contact from './components/Pages/Contact'
 import Footer from './components/Footer';
 
@@ -22,6 +23,7 @@ function App() {
         <Route exact path="/resume" element={<Resume/>}/>
         <Route exact path="/projects" element={<Projects/>}/>
         <Route exact path="/EducationAndCertificate" element={<EducationAndCertificate/>}/>
+        <Route exact path="/Certificate" element={<Certificate/>}/>
         <Route exact path="/contact" element={<Contact/>}/>
       </Routes>
     <Footer/>

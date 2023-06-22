@@ -23,7 +23,7 @@ function Footer() {
             </div>
             <div className="TopRightFooter">
               <div className="TopRightHeading">
-                <h2>Information</h2>
+                <h3>Related Links</h3>
               </div>
               <div className="TopRightBottomSection">
                 <ul>
@@ -58,9 +58,7 @@ function Footer() {
           </div>
           <div className="BottomFooter">
             <div className="BottomLeftFooter">
-              <h2>
-                <i>Rajiv Ranjan</i>
-              </h2>
+              <h2>Rajiv Ranjan</h2>
             </div>
             <div className="BottomMiddleFooter">
               <AiFillCopyrightCircle size="18px" />{" "}

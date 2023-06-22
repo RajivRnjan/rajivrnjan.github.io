@@ -34,7 +34,7 @@ code {
 
 
   --button-font-size:1rem;
-  --button-responsive-font-size:1rem;
+  --button-responsive-font-size:0.9rem;
 
   /*Font size desktop*/
   --primary-desktop-heading-font:2.5rem;

@@ -15,7 +15,7 @@ function GetInTouch() {
   return (
     <>
      
-        <div  className="GetInTouch" >
+        <div  className="GetInTouch" id="getintouch" >
           <div className="left_container" data-aos="fade-up">
             <h2 id="Heading">Get In Touch</h2>
             <p>We are there for you! How can I help?</p>

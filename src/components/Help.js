@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 import { MdDesktopMac } from 'react-icons/md'
 import { TbDeviceMobile } from 'react-icons/tb'
 
 
 
 function Help() {
+    const gotoTopWindow = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      };
+
     useEffect(()=>{
         AOS.init({duration:2000})
     },[]);
@@ -17,7 +22,7 @@ function Help() {
     
       <section className="WhatdoIhelpTopContainer">
         <div className="leftSectionHelp" data-aos="fade-right">
-            <Link to="/projects" >
+            <Link to="/projects" onClick={gotoTopWindow} >
             <div className="Item">
                 <div className=" ItemIcon ItemIcon1">
                     <MdDesktopMac size={"40px"} color='white'/>
@@ -29,7 +34,7 @@ function Help() {
             </div>
             </Link>
             
-            <Link to="/projects" >
+            <Link to="/projects" onClick={gotoTopWindow} >
             <div className="Item">
                 <div className="ItemIcon ItemIcon2">
                     <TbDeviceMobile size={"40px"} color={"white"}/>
@@ -41,7 +46,7 @@ function Help() {
             </div>
             </Link>
             
-            <Link to="/EducationAndCertificate">
+            <Link to="/Certificate" onClick={gotoTopWindow}>
             <div className="Item">
                 <div className=" ItemIcon ItemIcon3">
                     <MdDesktopMac size={"40px"} color={"white"}/>

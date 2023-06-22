@@ -45,7 +45,7 @@ function Projects() {
                         color="orange"
                       />
                     </div>
-                    <div>Star me on Github</div>
+                    Star me on Github
                   </Link>
                 </button>
               </div>

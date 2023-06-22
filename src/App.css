@@ -1,16 +1,12 @@
 body {
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
-  
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus{
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
   background: transparent;
-  
- 
 }
-
 
 a {
   text-decoration: none;
@@ -37,7 +33,6 @@ a {
   display: flex;
   top: 2px;
   left: 0px;
-
 }
 .navItems a {
   text-decoration: none;
@@ -78,11 +73,11 @@ a {
     list-style: none;
     padding: 12px 20px;
   }
-  .navItems>ul:hover li{
+  .navItems > ul:hover li {
     filter: blur(1px);
   }
-  .navItems>ul>li:hover{
-    filter:blur(0);
+  .navItems > ul > li:hover {
+    filter: blur(0);
   }
 
   #nav a:hover,
@@ -101,7 +96,6 @@ a {
     display: none;
     height: 25px;
     /* margin: 10px 10px 0 0; */
-    
   }
 }
 
@@ -123,7 +117,6 @@ a {
     color: var(--primary-text-color);
     padding: 10px 0 0 0;
     margin: 0;
-    
   }
 
   .navItems a {
@@ -133,11 +126,9 @@ a {
     display: block;
     height: 25px;
     margin-right: 10px;
-    
   }
   .menu {
     display: block;
-    
   }
 }
 
@@ -207,7 +198,7 @@ a {
   }
   .RightHeroContainer p {
     /* font-size: 18px; */
-    font-size:var(--desktop-paragraph-font);
+    font-size: var(--desktop-paragraph-font);
     color: #727171;
   }
   .HeroSectionButton {
@@ -283,7 +274,11 @@ a {
     font-size: 15px;
   }
   .RightHeroContainer .Description p {
-    font-size: var(--phone-paragraph-font)
+    font-size: var(--phone-paragraph-font);
+  }
+  .HeroSectionButton1,
+  .HeroSectionButton2 {
+    font-size: var(--button-responsive-font-size);
   }
 }
 
@@ -361,7 +356,7 @@ a {
   .rightSectionHelp {
     margin: 40px;
   }
- 
+
   .leftSectionHelp .Item {
     padding: 20px;
   }
@@ -425,7 +420,7 @@ a {
   .rightSectionHelp h2 {
     font-size: var(--secondary-tablet-heading-font);
   }
-  
+
   /*Work Experience*/
   .BottomRightContainer {
     display: flex;
@@ -474,11 +469,22 @@ a {
     flex: 0.6;
     padding: 0;
   }
-  
+
   .rightSectionHelp h2 {
     font-size: var(--secondary-phone-heading-font);
   }
-  
+  .rightSectionHelp .Counter .FirstCounter h1,
+  .rightSectionHelp .Counter .SecondCounter h1 {
+    font-size: var(--secondary-phone-heading-font);
+  }
+  .rightSectionHelp .Counter .FirstCounter p,
+  .rightSectionHelp .Counter .SecondCounter p {
+    font-size: var(--phone-paragraph-font);
+  }
+  .topLeftResumeContainer,
+  .topRightResumeContainer .ExperienceItem p {
+    font-size: var(--phone-paragraph-font);
+  }
 }
 
 /* #### My Journey #### */
@@ -494,10 +500,10 @@ a {
   font-size: var(--primary-desktop-heading-font);
 }
 
-
 .BottomRightContainer .ExperienceItem h2 {
   margin: 0;
 }
+
 @media screen and (max-width: 1920px) {
   .TopSection {
     padding: 20px 0 20px 50px;
@@ -512,10 +518,9 @@ a {
   .BottomLeftContainer {
     display: flex;
     flex: 0.4;
-    padding:20px 0 0 80px;
-  
+    padding: 20px 0 0 80px;
   }
-  .BottomLeftContainer>img{
+  .BottomLeftContainer > img {
     width: 470px;
   }
   .BottomRightContainer {
@@ -543,12 +548,11 @@ a {
 @media screen and (max-width: 490px) {
   .TopSection {
     padding: 15px 20px;
-    
   }
   .WorkExperienceContainer .TopSection h1 {
     font-size: var(--primary-phone-heading-font);
   }
-  .ExperienceItem h2{
+  .ExperienceItem h2 {
     font-size: var(--secondary-phone-heading-font);
   }
   .BottomSection {
@@ -639,7 +643,6 @@ a {
 /* #### My Work #### */
 /* #### My Work #### */
 @media screen and (max-width: 1920px) {
-
   .MyWorkHeader {
     display: flex;
     justify-content: space-around;
@@ -700,7 +703,6 @@ a {
   align-items: center;
   color: var(--primary-bg-color);
   text-decoration: none;
- 
 }
 .TopRightBottomSection ul li a:hover {
   color: rgb(133, 140, 133);
@@ -708,21 +710,22 @@ a {
 .TopRightBottomSection ul li a > .arrow {
   margin-right: 5px;
   /* color: rgb(133, 140, 133); */
+  font-size: 20px;
   color: transparent;
   transition: 0.3s all ease-in;
 }
 .TopRightBottomSection ul li a:hover > .arrow {
-  font-size: var(--desktop-paragraph-font);
-  color:var(--primary-color);
+  /* font-size: var(--desktop-paragraph-font); */
+  color: var(--primary-color);
   transition: 0.3s all ease-in;
 }
 @media screen and (max-width: 1920px) {
   .FooterContainer {
     background-color: var(--footer-bg-color);
-    color: #253835;    
+    color: #253835;
   }
   .FooterContainer li {
-    list-style: none;    
+    list-style: none;
   }
   .TopFooter {
     display: flex;
@@ -741,9 +744,9 @@ a {
   .sayinghii {
     color: #db1f38;
   }
-  .TopRightHeading h2 {
+  .TopRightHeading h3 {
     /* font-size: 35px; */
-    font-size: var(--secondary-desktop-heading-font);
+    font-size: var(--tertiary-desktop-heading-font);
   }
   .TopRightBottomSection ul {
     display: flex;
@@ -751,6 +754,7 @@ a {
     font-size: 15px;
     font-weight: 750;
     gap: 10px;
+    padding:0;
   }
   .BottomFooter {
     display: flex;
@@ -765,6 +769,7 @@ a {
   }
   .BottomRightFooter ul {
     display: flex;
+    justify-content: flex-start;
     gap: 20px;
   }
   .socialIcon {
@@ -804,7 +809,7 @@ a {
     font-size: var(--secondary-tablet-heading-font);
   }
   .TopRightFooter .TopRightHeading {
-    font-size: var(--tertiary-tablet-heading-font)
+    font-size: var(--tertiary-tablet-heading-font);
   }
   .TopLeftFooter h1 {
     font-size: var(--primary-tablet-heading-font);
@@ -815,6 +820,10 @@ a {
     font-size: 13px;
     font-weight: 650;
     gap: 10px;
+  }
+  .TopRightHeading h3 {
+    /* font-size: 35px; */
+    font-size: var(--tertiary-tablet-heading-font);
   }
 }
 @media screen and (max-width: 479px) {
@@ -839,6 +848,11 @@ a {
   .TopLeftFooter h1 {
     font-size: var(--secondary-phone-heading-font);
   }
+  .TopRightHeading h3 {
+    /* font-size: 35px; */
+    margin: 0;
+    font-size: var(--tertiary-phone-heading-font);
+  }
 
   .TopRightBottomSection ul {
     display: flex;
@@ -854,10 +868,11 @@ a {
     align-items: flex-start;
     border: none;
   }
+ 
   .BottomLeftFooter h2 {
-    margin-top: 0;
+    margin: 0 0 10px 0;
     font-size: var(--primary-phone-heading-font);
-    font-style: italic;
+   
   }
   .BottomMiddleFooter {
     margin-bottom: 15px;
@@ -972,10 +987,9 @@ a {
 
   .EduacationDesc li::marker {
     content: "➤";
-   
+
     font-size: var(--desktop-paragraph-font);
     color: var(--secondary-text-color);
-    
   }
   .topLeftResumeContainer .EducationItem h4,
   .topRightResumeContainer .ExperienceItem h4 {
@@ -986,7 +1000,7 @@ a {
   .topRightResumeContainer .ExperienceItem p {
     margin: 15px 0 0 0;
     /* font-size: 15px; */
-    font-size: var(--desktop-paragraph-font);
+    /* font-size: var(--desktop-paragraph-font); */
   }
   .topLeftResumeContainer .EducationItem .date,
   .topRightResumeContainer .ExperienceItem .date {
@@ -1008,7 +1022,7 @@ a {
     margin: 0px;
     padding: 0 15px;
   }
-  .resume{
+  .resume {
     font-size: var(--primary-phone-heading-font);
   }
   .topResumeContainer,
@@ -1019,28 +1033,36 @@ a {
     margin: 10px;
     gap: 10px;
   }
-  .bottomLeftResumeContainer>h2,.bottomRightResumeContainer>h2{
+  .bottomLeftResumeContainer > h2,
+  .bottomRightResumeContainer > h2 {
     font-size: var(--primary-phone-heading-font);
   }
   .TopLevelResumeContainer {
     display: flex;
     flex-direction: column;
   }
-  .bottomLeftResumeContainer{
+  .bottomLeftResumeContainer {
     font-size: var(--phone-paragraph-font);
   }
- 
+
   .topLeftmostResumeContainerHeading > h2,
-  .topRightmostResumeContainerHeading >h2{
+  .topRightmostResumeContainerHeading > h2 {
     font-size: var(--primary-phone-heading-font);
   }
-  .EduacationDesc{
+  .EducationItem > span,
+  .ExperienceItem > span {
+    font-size: var(--tertiary-phone-heading-font);
+  }
+  .EduacationDesc {
     font-size: var(--phone-paragraph-font);
   }
-  .EduacationDesc li::marker {
-   font-size: var(--phone-paragraph-font);
-   }
+  .EduacationDesc > ul {
+    padding-left: 25px;
   }
+  .EduacationDesc li::marker {
+    font-size: var(--phone-paragraph-font);
+  }
+}
 
 .progress {
   /* width:100%; */
@@ -1263,144 +1285,144 @@ input:focus {
     border-radius: 5px;
     background-color: var(--secondary-bg-color);
   }
-}
 
-.GetInTouch > .left_container > h2 {
-  font-size: var(--primary-desktop-heading-font);
-  color: var(--primary-bg-color);
-}
-.GetInTouch > .left_container > p {
-  color: var(--secondary-text-color);
-  margin: 0 0 40px 0;
-  font-size: var(--desktop-paragraph-font);
-}
-.GetInTouch > .left_container > form {
-  padding:0;
-}
+  .GetInTouch > .left_container > h2 {
+    font-size: var(--primary-desktop-heading-font);
+    color: var(--primary-bg-color);
+  }
+  .GetInTouch > .left_container > p {
+    color: var(--secondary-text-color);
+    margin: 0 0 40px 0;
+    font-size: var(--desktop-paragraph-font);
+  }
+  .GetInTouch > .left_container > form {
+    padding: 0;
+  }
 
+  .left_container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .inputContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+  }
+  textarea {
+    width: 100%;
+    resize: none;
+    height: 100px;
+  }
+  .left_container > form > :nth-child(3) {
+    display: flex;
+    align-items: flex-start;
+  }
+  .left_container > form > button {
+    background-color: var(--primary-color);
+    box-shadow: 3px 3px 3px var(--btn-box-shadow);
+    width: max-content;
+    padding: 15px 30px;
+    /* color: var(--primary-text-color); */
+    color: black;
+    font-size: var(--button-font-size);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .left_container > form > button:hover {
+    background-color: #267344;
+    box-shadow: 3px 3px 5px var(--btn-box-shadow);
+    color: var(--primary-text-color);
+    /* border: none; */
+    transition: 0.5s all ease-in-out;
+  }
 
+  .right_container {
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 
-.left_container > form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.inputContainer {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: var(--secondary-bg-color);
-}
-textarea {
-  width: 100%;
-  resize: none;
-  height: 100px;
-}
-.left_container > form > :nth-child(3) {
-  display: flex;
-  align-items: flex-start;
-}
-.left_container > form > button {
-  background-color: var(--primary-color);
-  box-shadow: 3px 3px 3px var(--btn-box-shadow);
-  width: max-content;
-  padding: 15px 30px;
-  /* color: var(--primary-text-color); */
-  color: black;
-  font-size: var(--button-font-size);
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.left_container > form > button:hover {
-  background-color: #267344;
-  box-shadow: 3px 3px 5px var(--btn-box-shadow);
-  color: var(--primary-text-color);
-  /* border: none; */
-  transition: 0.5s all ease-in-out;
-}
+  .right_container > .socialIcon > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    /* background-color: #117fab; */
+  }
 
-.right_container {
-  display: flex;
-  flex: 0.5;
-  flex-direction: column;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
-}
+  .right_container .socialIcon .LinkedinIcon {
+    color: #00adef;
+  }
+  .right_container .socialIcon .LinkedinIcon:hover {
+    color: white;
+    background-color: #00adef;
+    transition: 0.5s all ease-in-out;
+  }
 
-.right_container > .socialIcon > ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
-  /* background-color: #117fab; */
-}
+  .right_container .socialIcon .GithubIcon:hover {
+    color: white;
+    background-color: black;
+    transition: 0.5s all ease-in-out;
+  }
+  .right_container .socialIcon .twitterIcon {
+    color: #117fab;
+  }
+  .right_container .socialIcon .twitterIcon:hover {
+    color: white;
+    background-color: #117fab;
+    transition: 0.5s all ease-in-out;
+  }
 
-.right_container .socialIcon .LinkedinIcon {
-  color: #00adef;
-}
-.right_container .socialIcon .LinkedinIcon:hover {
-  color: white;
-  background-color: #00adef;
-  transition: 0.5s all ease-in-out;
-}
+  .ContactFooterContainer > p {
+    font-size: var(--tertiary-desktop-heading-font);
+    font-weight: 700;
+    color: var(--tertiary-color);
+  }
+  .ContactFooterElement {
+    display: flex;
+    flex-direction: column;
+    /* /* justify-content: center; */
+    align-items: flex-start;
+  }
+  .ContactFooterElement p{
+    font-size: var(--desktop-paragraph-font);
+  }
 
-
-.right_container .socialIcon .GithubIcon:hover {
-  color: white;
-  background-color: black;
-  transition: 0.5s all ease-in-out;
-}
-.right_container .socialIcon .twitterIcon {
-  color: #117fab;
-}
-.right_container .socialIcon .twitterIcon:hover {
-  color: white;
-  background-color: #117fab;
-  transition: 0.5s all ease-in-out;
-}
-
-.ContactFooterContainer > p {
-  font-size: var(--desktop-paragraph-font);
-  font-weight: 700;
-  color: var(--tertiary-color);
-}
-.ContactFooterElement {
-  display: flex;
-  flex-direction: column;
-  /* /* justify-content: center; */
-  align-items: flex-start;
-}
-
-.ContactFooterElement > div {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-}
-.ContactFooterElement > div > span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: white;
-}
-.ContactFooterElement span:hover {
-  background-color: var(--primary-color);
-}
-.ContactFooterElement .ContactFooterIcon:hover {
-  color: white;
-  transition: 0.5s all ease-in-out;
+  .ContactFooterElement > div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .ContactFooterElement > div > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .ContactFooterElement span:hover {
+    background-color: var(--primary-color);
+  }
+  .ContactFooterElement .ContactFooterIcon:hover {
+    color: white;
+    transition: 0.5s all ease-in-out;
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -1416,13 +1438,13 @@ textarea {
     /* padding: 10px; */
     gap: 20px;
   }
-  .GetInTouch > .left_container > h2{
+  .GetInTouch > .left_container > h2 {
     font-size: var(--primary-phone-heading-font);
   }
-  .left_container > form > button{
+  .left_container > form > button {
     font-size: var(--button-responsive-font-size);
   }
-  .GetInTouch > .left_container > p{
+  .GetInTouch > .left_container > p {
     font-size: var(--phone-paragraph-font);
   }
   .right_container > img {
@@ -1433,6 +1455,19 @@ textarea {
     margin: 20px;
     padding: 15px;
   }
+  .ContactFooterContainer p{
+    font-size: var(--secondary-phone-heading-font);
+  }
+  .ContactFooterElement >div>span {
+    width: 25px;
+    height: 25px;
+  }
+  .ContactFooterElement p {
+    font-size: var(--phone-paragraph-font);
+  }
+  .ContactFooterIcon {
+    font-size: 15px;
+  }
   .inputContainer {
     display: flex;
     align-items: center;
@@ -1440,7 +1475,8 @@ textarea {
     border-radius: 10px;
     background-color: var(--secondary-bg-color);
   }
-  input,textarea{
+  input,
+  textarea {
     font-size: var(--phone-paragraph-font);
   }
   .left_container {
@@ -1451,7 +1487,7 @@ textarea {
     align-items: center;
     align-items: stretch;
     margin: 0;
-    width:80%;
+    width: 80%;
   }
   .right_container > .socialIcon {
     display: none;
@@ -1534,9 +1570,8 @@ textarea {
     font-size: var(--desktop-paragraph-font);
     margin: 5px 0 0 0;
   }
-  .ProjectAbout>p{
-    margin:0 0 5px 0;
-    
+  .ProjectAbout > p {
+    margin: 0 0 5px 0;
   }
   .ProjectDesc {
     display: flex;
@@ -1545,17 +1580,17 @@ textarea {
   .ProjectDesc > p {
     margin-top: 0;
     color: var(--secondary-text-color);
-    font-weight:700;
+    font-weight: 700;
   }
   .ProjectItemButton {
     display: flex;
-    gap:10px;
+    gap: 10px;
     justify-content: space-between;
   }
   .ProjectItemButton > button {
     font-size: var(--button-font-size);
     font-weight: 600;
-    
+
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -1563,15 +1598,15 @@ textarea {
     box-shadow: 2px 2px 3px var(--btn-box-shadow);
     cursor: pointer;
   }
-  .ProjectItemButton > button:hover {    
+  .ProjectItemButton > button:hover {
     /* background-color: var(primary-btn-bg-color); */
     background-color: var(--primary-color);
-   
+
     transition: all 0.5s ease-in-out;
     font-weight: 700;
     /* box-shadow: 2px 2px 3px var(--btn-box-shadow); */
   }
-  .ProjectItemButton > button> a:hover{
+  .ProjectItemButton > button > a:hover {
     color: white;
   }
   .ProjectHeader {
@@ -1597,7 +1632,7 @@ textarea {
     gap: 10px;
     align-items: center;
     width: max-content;
-    padding: 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: none;
     font-size: var(--button-font-size);
@@ -1606,23 +1641,25 @@ textarea {
     box-shadow: 2px 2px 5px var(--btn-box-shadow);
     cursor: pointer;
     transition: 0.5s all ease-in-out;
-
   }
   .ProjectHeaderLeft > .starbtn > button:hover,
   .EducationAndCertificationHeader > .Left > button:hover {
-    padding: 15px;
     border-radius: 5px;
     /* border: 4px solid var(--primary-color); */
     color: white;
     background-color: #56b876;
     box-shadow: 2px 5px 10px var(--btn-box-shadow);
   }
-   
-  .starbtn > button > a{
+
+  .starbtn > button > a {
     display: flex;
     align-items: center;
   }
-  .starbtn > button .star{
+  .starbtn > button :hover {
+    transition: 0.5s ease-in-out;
+    color: white;
+  }
+  .starbtn > button .star {
     margin-right: 5px;
   }
   .ProjectHeaderRight {
@@ -1676,12 +1713,12 @@ textarea {
     /* font-size: 18px; */
     font-size: var(--phone-paragraph-font);
   }
-  .ProjectHeaderLeft > .starbtn  button {
+  .ProjectHeaderLeft > .starbtn button {
     /* font-size: 15px; */
     font-size: var(--button-responsive-font-size);
     padding: 10px;
   }
-  
+
   .ProjectHeaderLeft {
     margin: 0;
     padding: 25px;
@@ -1747,7 +1784,7 @@ textarea {
   font-size: var(--desktop-paragraph-font);
 }
 .EducationAndCertificationHeader > .Left > button {
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 .EducationAndCertificationHeader > .Right {
   flex: 0.5;
@@ -1779,7 +1816,6 @@ textarea {
   justify-content: space-around;
   gap: 100px;
 }
-
 
 .schoolDesc {
   display: flex;
@@ -1836,14 +1872,14 @@ textarea {
   .EducationAndCertificationHeader {
     display: inline;
   }
-  .EducationContainer {    
+  .EducationContainer {
     gap: 50px;
     padding: 0px;
   }
   .EducationAndCertificationHeader > .Left > h2 {
     font-size: var(--primary-phone-heading-font);
   }
- 
+
   .EducationContainer .FirstContainer,
   .EducationContainer .SecondContainer,
   .EducationContainer .ThirdContainer {
@@ -1851,91 +1887,88 @@ textarea {
     flex-direction: column-reverse;
     gap: 50px;
   }
-  .SchoolDescHeader h4{
-    font-size: var(--secondary-phone-heading-font) ;
+  .SchoolDescHeader h4 {
+    font-size: var(--secondary-phone-heading-font);
   }
   .schoolDesc > p {
     font-size: var(--phone-paragraph-font);
-  
   }
-  .SchoolDescHeader > .SchoolName > span{
+  .SchoolDescHeader > .SchoolName > span {
     font-size: var(--tertiary-phone-heading-font);
   }
-  .SchoolLogo>img{
+  .SchoolLogo > img {
     width: 20vw;
-
   }
-  
 }
 
 /* ### CERTIFICATE ### */
 /* ### CERTIFICATE ### */
 @media screen and (max-width: 1920px) {
-.CertificationContainer {
-  padding: 30px;
-}
-.CertificationContainer > h4 {
-  font-size: var(--primary-desktop-heading-font);
-}
-.CertificateRow {
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-  transition: all 0.5s ease-in-out;
-}
-.CertificateRow > .CertificateItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 250px;
-  height: 320px;
-  /* border: 1px solid var(--secondary-text-color); */
-  border-radius: 15px;
-  padding: 10px;
-  box-shadow: 3px 3px 5px var(--btn-box-shadow);
-  border-top: 7px solid var(--primary-text-color);
-  border-left: 7px solid var(--primary-text-color);
-  /* transition: all 5s ease-in-out; */
-}
-.CertificateRow > .CertificateItem:hover {
-  border-top: 7px solid var(--primary-color);
-  border-left: 7px solid var(--primary-color);
-  transition: 0.5s ease-in;
-}
-.CertificateRow > .CertificateItem img {
-  width: 250px;
-  height: 180px;
-}
-.CertificateRow > .CertificateItem img:hover {
-  transform: scale(0.9);
-  transition: 0.3s ease-in-out;
-}
+  .CertificationContainer {
+    padding: 30px;
+  }
+  .CertificationContainer > h4 {
+    font-size: var(--primary-desktop-heading-font);
+  }
+  .CertificateRow {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in-out;
+  }
+  .CertificateRow > .CertificateItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    height: 320px;
+    /* border: 1px solid var(--secondary-text-color); */
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px var(--btn-box-shadow);
+    border-top: 7px solid var(--primary-text-color);
+    border-left: 7px solid var(--primary-text-color);
+    /* transition: all 5s ease-in-out; */
+  }
+  .CertificateRow > .CertificateItem:hover {
+    border-top: 7px solid var(--primary-color);
+    border-left: 7px solid var(--primary-color);
+    transition: 0.5s ease-in;
+  }
+  .CertificateRow > .CertificateItem img {
+    width: 250px;
+    height: 180px;
+  }
+  .CertificateRow > .CertificateItem img:hover {
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+  }
 
-.CertificateItemMiddle,
-.CertificateItemFooter {
-  padding: 0 10px;
-}
-.CertificateItemMiddle > h4 {
-  margin: 0;
-  font-size: var(--desktop-paragraph-font);
-}
-.CertificateItemMiddle > h5 {
-  margin: 10px 0;
-}
-.CertificateItemFooter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .CertificateItemMiddle,
+  .CertificateItemFooter {
+    padding: 0 10px;
+  }
+  .CertificateItemMiddle > h4 {
+    margin: 0;
+    font-size: var(--desktop-paragraph-font);
+  }
+  .CertificateItemMiddle > h5 {
+    margin: 10px 0;
+  }
+  .CertificateItemFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 490px) {
- 
-.CertificationContainer > h4 ,.EducationContainer > h3 {
-  font-size: var(--primary-phone-heading-font);
-}
+  .CertificationContainer > h4,
+  .EducationContainer > h3 {
+    font-size: var(--primary-phone-heading-font);
+  }
 }
 
 /*### Thanking You ###*/

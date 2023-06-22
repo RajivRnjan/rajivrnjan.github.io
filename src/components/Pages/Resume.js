@@ -92,7 +92,7 @@ function Resume() {
                   <h4>Frontend-Developer</h4>
                   <span className="date">2019</span>
                   <span>CBSE</span>
-                  <p className="EdxperienceDesc">
+                  <p className="ExperienceDesc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Iste quod sed aliquid, maxime quos delectus aperiam
                     cupiditate. Assumenda, in omnis.
@@ -104,7 +104,7 @@ function Resume() {
                   <h4>Web Designer</h4>
                   <span className="date">2019</span>
                   <span>CBSE</span>
-                  <p className="EdxperienceDesc">
+                  <p className="ExperienceDesc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Iste quod sed aliquid, maxime quos delectus aperiam
                     cupiditate. Assumenda, in omnis.
@@ -116,7 +116,7 @@ function Resume() {
                   <h4>Graphics Designer</h4>
                   <span className="date">2019</span>
                   <span>CBSE</span>
-                  <p className="EdxperienceDesc">
+                  <p className="ExperienceDesc">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Iste quod sed aliquid, maxime quos delectus aperiam
                     cupiditate. Assumenda, in omnis.
