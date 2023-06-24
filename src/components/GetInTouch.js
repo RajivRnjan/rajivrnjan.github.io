@@ -20,7 +20,8 @@ function GetInTouch() {
             <h2 id="Heading">Get In Touch</h2>
             <p>We are there for you! How can I help?</p>
 
-            <form method="post" action="https://github.us8.list-manage.com/subscribe/post?u=7b7a766ccf7058cfb230b1f4e&amp;id=936f84fabf&amp;f_id=009e70e0f0">
+            <form method="post" action="mailto:rajivforyu@gmail.com">
+            {/* <form method="post" action="https://github.us8.list-manage.com/subscribe/post?u=7b7a766ccf7058cfb230b1f4e&amp;id=936f84fabf&amp;f_id=009e70e0f0"> */}
               <div className="inputContainer" data-aos="fade-right">
                 <BsFillPeopleFill size="1.4rem"/>
                 <input type="text" name="NAME" placeholder="Enter your Name" required/>
@@ -35,7 +36,7 @@ function GetInTouch() {
                 <BsPenFill size="1.4rem" />
                 <textarea name="MESSAGE" placeholder="Write something about your query" required></textarea>
               </div>
-              <button type="submit"  value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >Send</button>
+              <button type="submit"  value="Send" name="submit" id="mc-embedded-subscribe" >Send</button>
              
             </form>          
 

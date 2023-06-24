@@ -1,5 +1,4 @@
-import { React,  useEffect} from "react";
-
+import { React, useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,7 +9,6 @@ function Resume() {
     AOS.init({ duration: 1000 });
   }, []);
 
-  
   const { ref: htmlRef, inView: htmlIsVisible } = useInView();
   const { ref: javascriptRef, inView: javascriptIsVisible } = useInView();
   const { ref: reactjsRef, inView: reactjsIsVisible } = useInView();
@@ -90,36 +88,51 @@ function Resume() {
                 <span class="sideLine" data-aos="fade-up"></span>
                 <div className="ExperienceItem" data-aos="fade-up">
                   <h4>Frontend-Developer</h4>
-                  <span className="date">2019</span>
-                  <span>CBSE</span>
+                  <span className="date">2 year</span>
+                  <span>REACT JS</span>
                   <p className="ExperienceDesc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste quod sed aliquid, maxime quos delectus aperiam
-                    cupiditate. Assumenda, in omnis.
+                    <ul>
+                      <li>2 year as Freelance Frontend Developer</li>
+                      <li>
+                        I have done several projects as individual and
+                        collaborative based on React js.
+                      </li>
+                     
+                     
+                    </ul>
                   </p>
                 </div>
 
                 <span class="sideLine" data-aos="fade-up"></span>
                 <div className="ExperienceItem" data-aos="fade-up">
-                  <h4>Web Designer</h4>
-                  <span className="date">2019</span>
-                  <span>CBSE</span>
+                  <h4>Open Source Contribution</h4>
+                  <span className="date">2 month</span>
+                  <span>SSOC</span>
                   <p className="ExperienceDesc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste quod sed aliquid, maxime quos delectus aperiam
-                    cupiditate. Assumenda, in omnis.
+                    <ul>
+                      <li>Successfully merged several branch on github</li>
+                      
+                      <li>Still working as Open Source Contributer</li>
+                    </ul>
                   </p>
                 </div>
 
                 <span class="sideLine" data-aos="fade-up"></span>
                 <div className="ExperienceItem" data-aos="fade-up">
                   <h4>Graphics Designer</h4>
-                  <span className="date">2019</span>
-                  <span>CBSE</span>
+                  <span className="date">2 year</span>
+                  <span>CANVA</span>
                   <p className="ExperienceDesc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Iste quod sed aliquid, maxime quos delectus aperiam
-                    cupiditate. Assumenda, in omnis.
+                    <ul>
+                      <li>
+                        Created 3D models, renderings and video animations. 
+                      </li>
+                      <li>Produced drawing and layouts and assisted clients throughout the projects.</li>
+                      <li>
+                        Participated in all phase of the design and construction
+                        process on projects.
+                      </li>
+                    </ul>
                   </p>
                 </div>
               </div>
@@ -136,50 +149,63 @@ function Resume() {
                 <span>HTML/CSS</span>
                 <span>90%</span>
               </div>
-              <div className="progressvaluecontainer" ref={htmlRef} id=" progressvaluecontainer1">              
-                <div className={ `progressvalueHtml ${htmlIsVisible ? "animateLoadHtml" : ''} `}>
-                  
-                </div>
+              <div
+                className="progressvaluecontainer"
+                ref={htmlRef}
+                id=" progressvaluecontainer1"
+              >
+                <div
+                  className={`progressvalueHtml ${
+                    htmlIsVisible ? "animateLoadHtml" : ""
+                  } `}
+                ></div>
               </div>
 
               <div className="progress">
                 <span>JavaScript</span>
                 <span>80%</span>
               </div>
-              <div
-                className="progressvaluecontainer"
-                ref={javascriptRef}
-              >
-                <div className={ `progressvalueJavascript ${javascriptIsVisible ? "animateLoadJavascript" : ''} `}></div>
+              <div className="progressvaluecontainer" ref={javascriptRef}>
+                <div
+                  className={`progressvalueJavascript ${
+                    javascriptIsVisible ? "animateLoadJavascript" : ""
+                  } `}
+                ></div>
               </div>
 
               <div className="progress">
                 <span>ReactJs</span>
                 <span>60%</span>
               </div>
-              <div
-                className="progressvaluecontainer"
-                ref={reactjsRef}
-              >
-                <div className={ `progressvalueReactjs ${reactjsIsVisible ? "animateLoadReactjs" : ''} `}></div>
+              <div className="progressvaluecontainer" ref={reactjsRef}>
+                <div
+                  className={`progressvalueReactjs ${
+                    reactjsIsVisible ? "animateLoadReactjs" : ""
+                  } `}
+                ></div>
               </div>
 
               <div className="progress">
                 <span>Php</span>
                 <span>75%</span>
               </div>
-              <div
-                className="progressvaluecontainer"
-                ref={phpRef}
-              >
-                <div className={ `progressvaluePhp ${phpIsVisible ? "animateLoadPhp" : ''} `}></div>
+              <div className="progressvaluecontainer" ref={phpRef}>
+                <div
+                  className={`progressvaluePhp ${
+                    phpIsVisible ? "animateLoadPhp" : ""
+                  } `}
+                ></div>
               </div>
             </div>
 
             <div className="bottomRightResumeContainer" data-aos="fade-up">
               <h2>Other Skills</h2>
               <div className="circularProgressBarContainer">
-                <div className="circularprogress" data-aos="zoom-in" ref={communicationRef}>
+                <div
+                  className="circularprogress"
+                  data-aos="zoom-in"
+                  ref={communicationRef}
+                >
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">80%</div>
@@ -201,8 +227,9 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      
-                      className={ `circle1 ${communicationIsVisible ? "animateCommunication" : ''} `}
+                      className={`circle1 ${
+                        communicationIsVisible ? "animateCommunication" : ""
+                      } `}
                       cx="80"
                       cy="80"
                       r="70"
@@ -211,7 +238,11 @@ function Resume() {
                   </svg>
                 </div>
 
-                <div className="circularprogress" data-aos="zoom-out" ref={logicRef}>
+                <div
+                  className="circularprogress"
+                  data-aos="zoom-out"
+                  ref={logicRef}
+                >
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">70%</div>
@@ -233,7 +264,9 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      className={ `circle2 ${logicIsVisible ? "animateLogic" : ''} `}
+                      className={`circle2 ${
+                        logicIsVisible ? "animateLogic" : ""
+                      } `}
                       cx="80"
                       cy="80"
                       r="70"
@@ -242,7 +275,11 @@ function Resume() {
                   </svg>
                 </div>
 
-                <div className="circularprogress" data-aos="zoom-in" ref={problemRef}>
+                <div
+                  className="circularprogress"
+                  data-aos="zoom-in"
+                  ref={problemRef}
+                >
                   <div className="outerCircle">
                     <div className="innerCircle">
                       <div id="number">75%</div>
@@ -264,7 +301,9 @@ function Resume() {
                       </linearGradient>
                     </defs>
                     <circle
-                      className={ `circle3 ${problemIsVisible ? "animateProblem" : ''} `}
+                      className={`circle3 ${
+                        problemIsVisible ? "animateProblem" : ""
+                      } `}
                       cx="80"
                       cy="80"
                       r="70"

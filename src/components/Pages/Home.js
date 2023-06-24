@@ -22,6 +22,9 @@ function Home() {
       <Help />
       <MyJourney />
       <MyWork />
+      <div className="GetInTochMainContainer">
+        <GetInTouch />
+      </div>
 
      
 
@@ -43,9 +46,7 @@ function Home() {
         </div>
 
       </div>
-        <div className="GetInTochMainContainer">
-        <GetInTouch />
-        </div>
+       
     </>
   );
 }

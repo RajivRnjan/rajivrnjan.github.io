@@ -54,7 +54,7 @@ function MyWork() {
         <Carousel
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={700}
+          autoPlaySpeed={2000}
           className="MyWorkCarousel"
           responsive={responsive}
         >

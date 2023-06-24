@@ -5,6 +5,9 @@ import "aos/dist/aos.css";
 import Image from "../Images/RajivPhoto.jpg";
 
 function HeroSection() {
+
+  
+
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
