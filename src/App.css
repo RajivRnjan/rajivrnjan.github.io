@@ -14,9 +14,13 @@ img{
 a {
   text-decoration: none;
 }
+#Heading{
+  display:inline-block;
+  
+}
 #Heading::after {
   content: "";
-  width: 100px;
+  width: 30%;
   height: 3px;
   background-color: var(--primary-color);
   position: relative;
@@ -50,7 +54,7 @@ a {
   border-radius: 10px 0 0 10px;
   font-size: 50px;
   color: var(--primary-color);
-  box-shadow: -4px -2px 5px var(--btn-box-shadow);
+  
 }
 .goTop-arrow:hover{
   
@@ -63,6 +67,7 @@ a {
   .goTop-arrow{
     font-size: 45px;
   }
+  
 }
 
 
@@ -206,7 +211,23 @@ a {
     height: 30px;
     overflow: hidden;
     display: inline-block;
+   
   }
+  
+  .RightHeroContainer .Heading>span{
+    font-size: var(--tertiary-desktop-heading-font);
+    /* color:#bdbaba; */
+    color: var(--primary-color);
+    font-weight: 700;
+    
+    }
+  /* .RightHeroContainer .OurPosition>div{
+    font-size: var(--secondary-desktop-heading-font);
+    /* color:#bdbaba; */
+    /* color: var(--primary-color); */
+    /* font-weight: 700; */
+    
+    /* } */ 
   .RightHeroContainer .OurPosition h2::after {
     content: "";
     display: flex;
@@ -226,24 +247,21 @@ a {
       left: 100%;
     }
   }
-  .LeftHeroContainer .Image {
-    border-radius: 50%;
-    border: 18px solid var(--primary-text-color);
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
-  }
+ 
 
-  .LeftHeroContainer .Image img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-  }
+   .LeftHeroContainer .Image img {
+    width: 400px;
+    box-shadow: 0 22px 10px -15px var(--secondary-btn-bg-color);
+    
+  } 
   .RightHeroContainer {
     display: flex;
     flex-direction: column;
   }
+ 
   .RightHeroContainer .Heading h1 {
     font-size: 50px;
-    margin: 0;
+    margin: 0 0  20px 0;
   }
   .RightHeroContainer h2 {
     color: #bdbaba;
@@ -284,14 +302,25 @@ a {
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
   }
 }
-@media screen and (max-width: 990) {
+@media screen and (max-width: 990px) {
   .LeftHeroContainer .Image img {
     width: 250px;
-    height: 250px;
-    border-radius: 50%;
+    
+  }
+  .RightHeroContainer .Heading>span{
+    font-size: var(--tertiary-tablet-heading-font);
+ 
+    }
+    
+  .RightHeroContainer .Heading h1 {
+    font-size: 30px;
+    margin: 0;
   }
   .RightHeroContainer h2 {
     font-size: 15px;
+  }
+  .RightHeroContainer p{
+    font-size: var(--desktop-paragraph-font);
   }
 }
 
@@ -310,9 +339,15 @@ a {
  
   .LeftHeroContainer .Image img {
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
+   
   }
+  .RightHeroContainer .Heading{
+    margin-top:0;  
+    }
+  .RightHeroContainer .Heading>span{
+    font-size: var(--tertiary-phone-heading-font);
+ 
+    }
   .RightHeroContainer {
     display: flex;
     flex-direction: column;
@@ -322,10 +357,13 @@ a {
   }
   .RightHeroContainer .Heading h1 {
     font-size: 30px;
+    
   }
   .RightHeroContainer h2 {
     font-size: 15px;
+    margin: 10px 0 0 -35px;
   }
+  
   .RightHeroContainer .Description p {
     font-size: var(--phone-paragraph-font);
   }
@@ -616,7 +654,7 @@ a {
     padding: 15px 20px;
   }
   .WorkExperienceContainer .TopSection h1 {
-    font-size: var(--primary-phone-heading-font);
+    font-size: var(--secondary-phone-heading-font);
   }
   .ExperienceItem h2 {
     font-size: var(--secondary-phone-heading-font);
@@ -1554,7 +1592,7 @@ input:focus {
     gap: 20px;
   }
   .GetInTouch > .left_container > h2 {
-    font-size: var(--primary-phone-heading-font);
+    font-size: var(--secondary-phone-heading-font);
   }
   .left_container > form > button {
     font-size: var(--button-responsive-font-size);
@@ -2156,5 +2194,90 @@ input:focus {
   }
   .thankingContainer > .humanImage {
     display: none;
+  }
+}
+
+
+/* ###--- Skills ---###*/
+/* ###--- Skills ---###*/
+@media screen and (max-width:1920px) { 
+
+.SkillsContainer{
+  margin: 40px 60px;
+  padding: 10px 20px;
+
+}
+.SkillsContainer h2{
+  font-size: var(--primary-desktop-heading-font);
+}
+.SkillsContainer>.ToolsContainer{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  gap:30px;
+  
+}
+.SkillsContainer>.ToolsContainer>.SkillsItem{
+  display: flex;
+  width: calc(100% / 5);
+ 
+  gap: 20px;
+  /* row-gap: 30px; */
+  align-items: center;
+  padding:10px  30px  10px 15px;
+  background-color: #f4f4f4;
+  box-shadow: 2px 4px 4px var(--btn-box-shadow);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 10px 0 0 10px;
+  
+}
+.SkillsContainer>.ToolsContainer .skillLogo>img{
+  width: 50px;
+}
+.ToolsContainer>.SkillsItem>.LogoTitle{
+  font-size: var(--desktop-paragraph-font);
+  font-weight: 700;
+}
+}
+
+@media screen and (max-width:990px){
+  .SkillsContainer h2{
+    font-size: var(--primary-tablet-heading-font);
+  } 
+  
+  .SkillsContainer>.ToolsContainer .skillLogo>img{
+    width: 35px;
+  }
+  .ToolsContainer>.SkillsItem>.LogoTitle{
+    font-size: var(--tablet-paragraph-font);
+   
+  }
+}
+
+@media screen and (max-width:470px){
+  .SkillsContainer{
+    margin:30px 0 20px 15px;
+    padding:20px 30px 20px 20px;
+  }
+  .SkillsContainer h2{
+    font-size: var(--secondary-phone-heading-font);
+  }
+  .SkillsContainer>.ToolsContainer>.SkillsItem{
+   width:calc(100%/3);
+   gap:10px;
+   padding:10px  30px  10px 5px;
+
+   
+  }
+  .SkillsContainer>.ToolsContainer{
+    justify-content: space-around;
+   gap:15px;
+  }
+  .SkillsContainer>.ToolsContainer .skillLogo>img{
+    width: 25px;
+  }
+  .ToolsContainer>.SkillsItem>.LogoTitle{
+    font-size: var(--phone-paragraph-font);
+    
   }
 }

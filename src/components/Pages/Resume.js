@@ -23,7 +23,7 @@ function Resume() {
       <section className="ResumeContainer">
         <header>
           <h1 id="Heading" className="resume">
-            RESUME
+            Resume
           </h1>
         </header>
 

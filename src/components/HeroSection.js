@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "../Images/RajivPhoto.jpg";
+
+import Rajiv from '../Images/rajiv.png'
 
 function HeroSection() {
 
@@ -19,16 +20,17 @@ function HeroSection() {
             <aside>
               <div className="LeftHeroContainer">
                 <div className="Image">
-                  <img src={Image} alt="OurImage" />
+                  <img src={Rajiv} alt="OurImage" />
                 </div>
               </div>
             </aside>
             <div className="RightHeroContainer">
+              
+              <div className="Heading">
+              <span>Hi, my name is </span><br/><h1>Rajiv Ranjan</h1>
+              </div>
               <div className="OurPosition">
                 <h2>Frontend developer</h2>
-              </div>
-              <div className="Heading">
-                <h1>Rajiv Ranjan</h1>
               </div>
               <div className="Description">
                 <p>
