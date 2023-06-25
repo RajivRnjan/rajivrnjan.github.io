@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "./static/css/main.098050ca.css",
-    "main.js": "./static/js/main.59d459a1.js",
+    "main.css": "./static/css/main.003176d5.css",
+    "main.js": "./static/js/main.118705d4.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
+    "static/media/rajiv.png": "./static/media/rajiv.d1d518282f90a2ea0beb.png",
     "static/media/vbuImg.png": "./static/media/vbuImg.274fa61111aa48c1f890.png",
     "static/media/portfolio.jpg": "./static/media/portfolio.3fa2cbcf9d989e8fa364.jpg",
     "static/media/national public school.jpg": "./static/media/national public school.f0af7da4f7b303485f63.jpg",
     "static/media/skills.jpg": "./static/media/skills.c692978a5eb54eda031c.jpg",
     "static/media/human.png": "./static/media/human.548f3bce3e867601bce6.png",
     "static/media/image4.jpg": "./static/media/image4.43d0feecdbd2bfd5ed89.jpg",
-    "static/media/RajivPhoto.jpg": "./static/media/RajivPhoto.def5cec75a941d1d0180.jpg",
     "static/media/isc.jpg": "./static/media/isc.8dfcbda0057a01f11306.jpg",
     "static/media/contact-us.jpg": "./static/media/contact-us.24fcc236ce80c66cd50b.jpg",
     "static/media/education.jpg": "./static/media/education.4a829082e390bb09e2d1.jpg",
@@ -41,12 +41,12 @@
     "static/media/css.svg": "./static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "./static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript.svg": "./static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
-    "main.098050ca.css.map": "./static/css/main.098050ca.css.map",
-    "main.59d459a1.js.map": "./static/js/main.59d459a1.js.map",
+    "main.003176d5.css.map": "./static/css/main.003176d5.css.map",
+    "main.118705d4.js.map": "./static/js/main.118705d4.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.098050ca.css",
-    "static/js/main.59d459a1.js"
+    "static/css/main.003176d5.css",
+    "static/js/main.118705d4.js"
   ]
 }
