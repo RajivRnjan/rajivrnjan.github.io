@@ -191,30 +191,33 @@ a {
     width: 100%;
     /* height: 90vh; */
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    margin-top: 40px;
+    /* margin-top: 40px; */
   }
   .LeftHeroContainer {
     display: flex;
-    flex: 0.4;
-    justify-content: flex-end;
+    /* flex:0.5; */
+    flex-direction: column;
+    
+   justify-content: flex-start;
     padding: 20px;
   }
   .RightHeroContainer {
     display: flex;
-    flex: 0.6;
-    justify-content: flex-start;
-    /* margin: 0 20px; */
+    /* flex: 0.5; */
+    justify-content: flex-end;
+    margin: 0 20px;
   }
-  .RightHeroContainer .OurPosition h2 {
+  .LeftHeroContainer .OurPosition h2 {
     height: 30px;
     overflow: hidden;
     display: inline-block;
    
   }
   
-  .RightHeroContainer .Heading>span{
+  .LeftHeroContainer .Heading span{
     font-size: var(--tertiary-desktop-heading-font);
     /* color:#bdbaba; */
     color: var(--primary-color);
@@ -228,7 +231,7 @@ a {
     /* font-weight: 700; */
     
     /* } */ 
-  .RightHeroContainer .OurPosition h2::after {
+  .LeftHeroContainer .OurPosition h2::after {
     content: "";
     display: flex;
     left: 0;
@@ -249,28 +252,28 @@ a {
   }
  
 
-   .LeftHeroContainer .Image img {
-    width: 400px;
-    box-shadow: 0 22px 10px -15px var(--secondary-btn-bg-color);
-    
-  } 
+   
   .RightHeroContainer {
     display: flex;
     flex-direction: column;
   }
+  .RightHeroContainer img{
+    width:500px;
+    padding:30px 20px 0 20px  ;
+  }
  
-  .RightHeroContainer .Heading h1 {
+  .LeftHeroContainer .Heading h1 {
     font-size: 50px;
     margin: 0 0  20px 0;
   }
-  .RightHeroContainer h2 {
+  .LeftHeroContainer h2 {
     color: #bdbaba;
     margin: 0;
   }
-  .RightHeroContainer p {
+  .LeftHeroContainer p {
     /* font-size: 18px; */
     font-size: var(--desktop-paragraph-font);
-    color: #727171;
+    /* color: #727171; */
   }
   .HeroSectionButton {
     display: flex;
@@ -302,24 +305,29 @@ a {
     box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
   }
 }
-@media screen and (max-width: 990px) {
-  .LeftHeroContainer .Image img {
-    width: 250px;
+@media screen and (max-width: 790px) {
+  .LeftHeroContainer .Heading h1 {
+    font-size: 50px;
+    margin: 0 0  20px 0;
+  }
+
+  .RightHeroContainer  img {
+    width: 300px;
     
   }
-  .RightHeroContainer .Heading>span{
+  .LeftHeroContainer .Heading span{
     font-size: var(--tertiary-tablet-heading-font);
  
     }
     
-  .RightHeroContainer .Heading h1 {
+  .LeftHeroContainer .Heading h1 {
     font-size: 30px;
     margin: 0;
   }
-  .RightHeroContainer h2 {
+  .LeftHeroContainer h2 {
     font-size: 15px;
   }
-  .RightHeroContainer p{
+  .LeftHeroContainer p{
     font-size: var(--desktop-paragraph-font);
   }
 }
@@ -327,7 +335,7 @@ a {
 @media screen and (max-width: 470px) {
   .HeroContainer {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-around;
     height: fit-content;
   }
@@ -337,39 +345,45 @@ a {
     justify-content: flex-end;
   }
  
-  .LeftHeroContainer .Image img {
-    width: 200px;
-   
-  }
-  .RightHeroContainer .Heading{
-    margin-top:0;  
-    }
-  .RightHeroContainer .Heading>span{
+ .LeftHeroContainer .HeroTitle .Heading{
+  padding-top:20px;
+ }
+  
+  
+  .LeftHeroContainer .Heading span{
     font-size: var(--tertiary-phone-heading-font);
  
     }
-  .RightHeroContainer {
-    display: flex;
-    flex-direction: column;
-    flex: 0;
-    align-items: center;
-    margin: 0 20px;
+  .RightHeroContainer {    
+    margin: 0 ;
   }
-  .RightHeroContainer .Heading h1 {
+  .LeftHeroContainer .Heading h1 {
     font-size: 30px;
+    margin:0;
     
   }
-  .RightHeroContainer h2 {
-    font-size: 15px;
-    margin: 10px 0 0 -35px;
+  .LeftHeroContainer h2 {
+    font-size: 20px;
+    
   }
   
-  .RightHeroContainer .Description p {
+  .LeftHeroContainer .Description p {
     font-size: var(--phone-paragraph-font);
   }
   .HeroSectionButton1,
   .HeroSectionButton2 {
     font-size: var(--button-responsive-font-size);
+  }
+  .RightHeroContainer img{
+    width:300;
+  }
+  .HeroSectionButton {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width:100%;
+    justify-content: space-between;
+    
   }
 }
 
@@ -428,10 +442,13 @@ a {
 .rightSectionHelp .Counter .FirstCounter h1,
 .rightSectionHelp .Counter .SecondCounter h1 {
   margin: 0;
+  color:var(--secondary-text-color);
+
 }
 .rightSectionHelp .Counter .FirstCounter p,
 .rightSectionHelp .Counter .SecondCounter p {
   margin: 0;
+  color:var(--secondary-text-color);
 }
 
 a {
@@ -638,6 +655,11 @@ a {
     margin: 5px;
     display: flex;
     align-items: center;
+    
+  }
+  .ExperienceItem>p>.round-triangle-icon{
+    color:var(--secondary-text-color);
+    margin-right: 5px;
   }
 }
 @media screen and (max-width:990px){
@@ -1137,6 +1159,7 @@ a {
     margin: 0 6px;
     /* padding: 0 10px; */
   }
+  
 }
 @media screen and (max-width: 490px) {
   .ResumeContainer {
@@ -1535,6 +1558,9 @@ input:focus {
   }
   .ContactFooterElement p{
     font-size: var(--desktop-paragraph-font);
+    margin:10px 0;
+    font-weight: 600;
+    color:var(--secondary-text-color)
   }
 
   .ContactFooterElement > div {
@@ -1610,7 +1636,8 @@ input:focus {
     padding: 15px;
   }
   .ContactFooterContainer p{
-    font-size: var(--secondary-phone-heading-font);
+    font-size: var(--tertiary-phone-heading-font);
+    margin:7px 0;
   }
   .ContactFooterElement >div>span {
     width: 25px;
@@ -1722,10 +1749,11 @@ input:focus {
   }
   .ProjectTitle > h4 {
     font-size: var(--desktop-paragraph-font);
-    margin: 5px 0 0 0;
+    margin: 5px 0 ;
   }
   .ProjectAbout > p {
     margin: 0 0 5px 0;
+    color:var(--secondary-text-color)
   }
   .ProjectDesc {
     display: flex;
@@ -1744,24 +1772,28 @@ input:focus {
   .ProjectItemButton > button {
     font-size: var(--button-font-size);
     font-weight: 600;
-
     border: none;
     border-radius: 5px;
     padding: 10px;
     background-color: var(--secondary-btn-bg-color);
     box-shadow: 2px 2px 3px var(--btn-box-shadow);
     cursor: pointer;
+    
   }
   .ProjectItemButton > button:hover {
     /* background-color: var(primary-btn-bg-color); */
     background-color: var(--primary-color);
-
+  
     transition: all 0.5s ease-in-out;
     font-weight: 700;
     /* box-shadow: 2px 2px 3px var(--btn-box-shadow); */
   }
+  .ProjectItemButton > button > a {
+    
+    color:var(--secondary-text-color)
+  }
   .ProjectItemButton > button > a:hover {
-    color: white;
+    color: #ffffff;
   }
   .ProjectHeader {
     display: flex;
@@ -1795,6 +1827,7 @@ input:focus {
     box-shadow: 2px 2px 5px var(--btn-box-shadow);
     cursor: pointer;
     transition: 0.5s all ease-in-out;
+    color:var(--secondary-text-color);
   }
   .ProjectHeaderLeft > .starbtn > button:hover,
   .EducationAndCertificationHeader > .Left > button:hover {
@@ -1823,6 +1856,7 @@ input:focus {
     align-items: center;
     justify-content: center;
   }
+
   .ProjectHeaderLeft > h2 {
     font-size: var(--primary-desktop-heading-font);
     margin-bottom: 0;
@@ -1831,7 +1865,9 @@ input:focus {
     font-size: var(--desktop-paragraph-font);
   }
   .ProjectHeaderRight > img {
-    width: 70%;
+    width: 80%;
+    margin-top: 20px;
+    padding-top:40px;
   }
 }
 @media screen and (max-width:990px){
@@ -1864,6 +1900,8 @@ input:focus {
   }
   .ProjectHeaderRight > img {
     width: 90vw;
+    margin: 0;
+    padding: 0;
   }
   .ProjectHeaderLeft > h2 {
     font-size: var(--primary-phone-heading-font);
@@ -1956,6 +1994,9 @@ input:focus {
   justify-content: center;
   align-items: center;
 }
+.EducationAndCertificationHeader > .Right>img {
+  width:90%;
+}
 
 .EducationContainer {
   display: flex;
@@ -1966,6 +2007,7 @@ input:focus {
 .EducationContainer > h3 {
   font-size: var(--secondary-desktop-heading-font);
   margin-bottom: 0;
+  color:var(--secondary-text-color);
 }
 .EducationContainer .FirstContainer,
 .EducationContainer .ThirdContainer {
@@ -2000,6 +2042,7 @@ input:focus {
 .SchoolDescHeader > .SchoolName > span {
   font-size: var(--secondary-phone-heading-font);
   font-weight: 700;
+  color:var(--secondary-text-color);
 }
 .schoolDesc > span {
   font-size: var(--tertiary-phone-heading-font);
@@ -2144,6 +2187,10 @@ input:focus {
     justify-content: space-between;
     align-items: center;
   }
+  .CertificateItemFooter .show-detail-logo{
+    font-size: 25px;
+    color:var(--secondary-text-color);
+  }
 }
 
 @media screen and (max-width: 490px) {
@@ -2169,6 +2216,7 @@ input:focus {
     padding: 35px 30px;
     border-radius: 5px 25px;
     box-shadow: 5px 10px 25px -10px;
+    color:#000000;
   }
   .thankingContainer > .humanImage {
     border: 5px;
@@ -2237,6 +2285,7 @@ input:focus {
 .ToolsContainer>.SkillsItem>.LogoTitle{
   font-size: var(--desktop-paragraph-font);
   font-weight: 700;
+  color:var(--secondary-text-color)
 }
 }
 

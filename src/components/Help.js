@@ -4,8 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-import { MdDesktopMac } from 'react-icons/md'
-import { TbDeviceMobile } from 'react-icons/tb'
+import { TbDeviceMobile,TbFileCertificate } from 'react-icons/tb'
+import {CgWebsite} from 'react-icons/cg';
 
 
 
@@ -25,7 +25,7 @@ function Help() {
             <Link to="/projects" onClick={gotoTopWindow} >
             <div className="Item">
                 <div className=" ItemIcon ItemIcon1">
-                    <MdDesktopMac size={"40px"} color='white'/>
+                    <CgWebsite size={"40px"} color='white'/>
                 </div>
                 <div className="ItemDesc">
                     <h3>Website</h3>
@@ -49,7 +49,7 @@ function Help() {
             <Link to="/Certificate" onClick={gotoTopWindow}>
             <div className="Item">
                 <div className=" ItemIcon ItemIcon3">
-                    <MdDesktopMac size={"40px"} color={"white"}/>
+                    <TbFileCertificate size={"40px"} color={"white"}/>
                 </div>
                 <div className="ItemDesc">
                     <h3>Certification</h3>

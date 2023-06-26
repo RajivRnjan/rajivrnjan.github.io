@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import skill from "../../Images/skills.jpg";
+import skill from "../../Images/project.jpg";
 
 import textRajivImg from "../../Images/image1.jpg";
 import NewsWalaImg from "../../Images/image3.jpg";

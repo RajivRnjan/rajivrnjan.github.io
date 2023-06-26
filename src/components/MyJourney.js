@@ -63,55 +63,54 @@ function MyJourney() {
                 <div className="ExperienceItem" data-aos="fade-up">
                   <h2>Matriculation</h2>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle  className="round-triangle-icon"/>
                     Completed in 2019
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     National Public School Hazaribagh
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     Central Board of Secondary Education
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     Percentage : 84.4%
                   </p>
                 </div>
                 <div className="ExperienceItem" data-aos="fade-up">
                   <h2>Intermediate</h2>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     2019 - 2021
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     Inter Science College Hazaribagh.
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     Jharkhand Academic Council (JAC)
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     Percentage : 84%
                   </p>
                 </div>
                 <div className="ExperienceItem" data-aos="fade-up">
                   <h2>Graduation</h2>
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     2021 - 2024
                   </p>
                   <p>
-                    <IoIosArrowDroprightCircle size="25px" />
-                    University Department of Computer Application, Vinoba Bhave
-                    University
+                    <IoIosArrowDroprightCircle className="round-triangle-icon" />
+                    University Dept. of Computer Application, VBU
                   </p>
 
                   <p>
-                    <IoIosArrowDroprightCircle />
+                    <IoIosArrowDroprightCircle className="round-triangle-icon"/>
                     SGPA : 8.24
                   </p>
                 </div>

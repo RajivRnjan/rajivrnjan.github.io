@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import Certificate from "../Certificate";
 import College from "../College";
 
-import EducationImg from "../../Images/education.jpg";
+import EducationImg from "../../Images/education.png";
 
 
 
