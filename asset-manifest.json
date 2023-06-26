@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.8ee5145a.css",
-    "main.js": "./static/js/main.6371b4c3.js",
+    "main.js": "./static/js/main.7c79274f.js",
     "static/js/787.1ed0c42c.chunk.js": "./static/js/787.1ed0c42c.chunk.js",
     "static/media/vbuImg.png": "./static/media/vbuImg.274fa61111aa48c1f890.png",
     "static/media/rajiv1.png": "./static/media/rajiv1.56661b08d8e5f6c1ddf5.png",
@@ -10,16 +10,16 @@
     "static/media/human.png": "./static/media/human.548f3bce3e867601bce6.png",
     "static/media/image4.jpg": "./static/media/image4.43d0feecdbd2bfd5ed89.jpg",
     "static/media/isc.jpg": "./static/media/isc.8dfcbda0057a01f11306.jpg",
-    "static/media/project.jpg": "./static/media/project.2c24e3159f8f09904ff1.jpg",
     "static/media/contact-us.jpg": "./static/media/contact-us.24fcc236ce80c66cd50b.jpg",
     "static/media/image3.jpg": "./static/media/image3.a6a410de057dc074566a.jpg",
     "static/media/php.png": "./static/media/php.7a07b4d51935e86b723c.png",
     "static/media/c++.png": "./static/media/c++.84e8b88e496ed6327ab4.png",
-    "static/media/education.webp": "./static/media/education.567c8ed31b48c0eb4a32.webp",
     "static/media/image1.jpg": "./static/media/image1.d3142c61c2f0926c5aad.jpg",
     "static/media/success.png": "./static/media/success.8c8ba794f718fb296b2c.png",
+    "static/media/project.jpg": "./static/media/project.9894af7570c3c4c60635.jpg",
     "static/media/Rajiv Logo.png": "./static/media/Rajiv Logo.9744b81699d2a8b466c3.png",
     "static/media/vbulogo.jpg": "./static/media/vbulogo.5a1879ff0651846249c8.jpg",
+    "static/media/education.png": "./static/media/education.0379c27579451e52dfa7.png",
     "static/media/image2.jpg": "./static/media/image2.892f4bf47b1be50872ac.jpg",
     "static/media/FreeCodeCamp.png": "./static/media/FreeCodeCamp.72fe992f475f30592602.png",
     "static/media/isclogo.png": "./static/media/isclogo.aae11d30e3ddb1c4552e.png",
@@ -42,11 +42,11 @@
     "static/media/html.svg": "./static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript.svg": "./static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "main.8ee5145a.css.map": "./static/css/main.8ee5145a.css.map",
-    "main.6371b4c3.js.map": "./static/js/main.6371b4c3.js.map",
+    "main.7c79274f.js.map": "./static/js/main.7c79274f.js.map",
     "787.1ed0c42c.chunk.js.map": "./static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8ee5145a.css",
-    "static/js/main.6371b4c3.js"
+    "static/js/main.7c79274f.js"
   ]
 }
