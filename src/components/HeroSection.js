@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Rajiv from "../Images/rajiv1.png";
+import Rajiv from "../Images/Rajiv.png";
 
 function HeroSection() {
   useEffect(() => {

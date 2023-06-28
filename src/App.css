@@ -475,9 +475,12 @@ a {
   .leftSectionHelp .Item .ItemDesc p {
     margin: 0;
     font-size: var(--desktop-paragraph-font);
+    color: var(--secondary-text-color);
   }
   .rightSectionHelp .desc p {
     font-size: var(--desktop-paragraph-font);
+    color: var(--secondary-text-color);
+
   }
   .rightSectionHelp {
     display: flex;
